@@ -12,7 +12,7 @@ Endpoints provided by create_app():
     POST /step    — Advance the current episode with an action
 
 Endpoints added here:
-    GET  /health  — Liveness probe; returns {"status": "ok", "environment": "MedTriageEnv"}
+    GET  /health  — Liveness probe; returns {"status": "healthy", "environment": "MedTriageEnv"}
 
 Environment variables:
     ENABLE_WEB_INTERFACE   — Set to "true" to mount the built-in OpenEnv web UI
@@ -60,7 +60,7 @@ app.routes[:] = [r for r in app.routes if getattr(r, "path", "") != "/health"]
 
 @app.get("/health", tags=["ops"])
 async def health() -> JSONResponse:
-    return JSONResponse({"status": "ok", "environment": "MedTriageEnv"})
+    return JSONResponse({"status": "healthy", "environment": "MedTriageEnv"})
 
 # ---------------------------------------------------------------------------
 # Development entry point
