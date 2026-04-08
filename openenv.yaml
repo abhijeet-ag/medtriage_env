@@ -1,7 +1,7 @@
 name: medtriage_env
 version: "1.0.0"
 description: "Clinical triage and diagnostic reasoning environment for training AI agents to interview patients, order diagnostic tests, and produce accurate differential diagnoses."
-author: "YOURNAME"
+author: "abhi-ag"
 license: "MIT"
 
 environment:
@@ -26,4 +26,4 @@ server:
   port: 8000
   
 hub:
-  space_url: ""    # Fill this in after HF Spaces deployment
+  space_url: "https://abhi-ag-medtriage-env.hf.space"    # Fill this in after HF Spaces deployment
