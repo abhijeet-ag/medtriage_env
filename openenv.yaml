@@ -1,0 +1,29 @@
+name: medtriage_env
+version: "1.0.0"
+description: "Clinical triage and diagnostic reasoning environment for training AI agents to interview patients, order diagnostic tests, and produce accurate differential diagnoses."
+author: "YOURNAME"
+license: "MIT"
+
+environment:
+  class: MedTriageEnvironment
+  module: server.environment
+  action_type: MedTriageAction
+  observation_type: MedTriageObservation
+
+tasks:
+  - id: easy
+    description: "Textbook presentations with one obvious diagnosis"
+    difficulty: easy
+  - id: medium
+    description: "Overlapping symptoms requiring test-driven diagnosis"
+    difficulty: medium
+  - id: hard
+    description: "Rare or atypical conditions requiring precise questioning"
+    difficulty: hard
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  
+hub:
+  space_url: ""    # Fill this in after HF Spaces deployment

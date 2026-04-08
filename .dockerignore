@@ -1,8 +1,10 @@
 venv/
-__pycache__/
-*.egg-info/
 .env
 .git/
+__pycache__/
+*.pyc
+*.pyo
 .DS_Store
+*.egg-info/
 outputs/
 tests/

@@ -1,0 +1,1832 @@
+[
+  {
+    "id": "case_001",
+    "difficulty": "easy",
+    "chief_complaint": "I have pain in my lower right belly that started around my belly button about 12 hours ago.",
+    "age": 22,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "118/76",
+      "heart_rate": 96,
+      "temperature": 38.2,
+      "respiratory_rate": 18,
+      "oxygen_saturation": 98
+    },
+    "symptom_responses": {
+      "where exactly is your pain now": "it started around my belly button but now it's mostly in my lower right side",
+      "how would you rate your pain from 1 to 10": "about a 7, it is pretty constant",
+      "do you have nausea or vomiting": "yes, I vomited twice this morning",
+      "do you have a fever": "I felt hot earlier, I think I have one",
+      "have you had a bowel movement recently": "no, I have not gone in two days and I feel constipated",
+      "does anything make the pain better or worse": "it gets much worse when I walk or move around",
+      "do you have any appetite": "no, I have absolutely no desire to eat anything",
+      "have you had this kind of pain before": "no, this is the first time I have ever had anything like this",
+      "any urinary symptoms like burning or frequency": "no, urination feels normal",
+      "do you have any medical history or take any medications": "no, I am generally healthy and take nothing"
+    },
+    "available_tests": ["CBC", "CRP", "CT_abdomen_pelvis", "abdominal_ultrasound", "urinalysis", "BMP"],
+    "test_results": {
+      "CBC": "WBC 14.2 x10^9/L with neutrophilia and left shift, hemoglobin 14.8 g/dL, platelets normal",
+      "CRP": "elevated at 48 mg/L",
+      "CT_abdomen_pelvis": "distended appendix measuring 10 mm with periappendiceal fat stranding, no perforation identified, consistent with acute appendicitis",
+      "abdominal_ultrasound": "non-compressible appendix visualized with diameter 9 mm, increased echogenicity of surrounding fat",
+      "urinalysis": "normal, no pyuria, no hematuria, no bacteriuria",
+      "BMP": "normal electrolytes, BUN 14, creatinine 0.9 mg/dL, glucose 95 mg/dL"
+    },
+    "gold_diagnosis": "acute_appendicitis",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["CBC", "CT_abdomen_pelvis"],
+    "gold_differential": ["acute_appendicitis", "mesenteric_lymphadenitis", "Meckel_diverticulitis"],
+    "scoring_hints": {
+      "critical_symptoms": ["RLQ_pain", "periumbilical_migration", "nausea_vomiting", "fever", "anorexia"],
+      "diagnosis_keywords": ["appendicitis", "acute appendicitis", "inflamed appendix"],
+      "triage_keywords": ["urgent", "surgical emergency", "needs surgery"]
+    }
+  },
+  {
+    "id": "case_002",
+    "difficulty": "easy",
+    "chief_complaint": "I have had a productive cough with yellow-green phlegm and fever for the past four days.",
+    "age": 58,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "128/82",
+      "heart_rate": 102,
+      "temperature": 38.8,
+      "respiratory_rate": 22,
+      "oxygen_saturation": 93
+    },
+    "symptom_responses": {
+      "describe your cough to me": "it is a wet cough with thick yellowish-green mucus, sometimes tinged with a little blood",
+      "when did this start": "four days ago, it started as a dry cough but quickly became productive",
+      "do you have chest pain": "yes, a sharp pain on my right side when I take a deep breath",
+      "have you had chills or rigors": "yes, I had terrible shaking chills two nights ago",
+      "do you have shortness of breath": "yes, I get winded walking across the room which is not normal for me",
+      "have you been around anyone who was sick": "my coworker had similar symptoms about a week ago",
+      "do you have any medical history": "I have type 2 diabetes, well controlled",
+      "are you vaccinated against pneumonia and flu": "I had a flu shot but I am not sure about the pneumonia vaccine",
+      "do you smoke": "I quit smoking five years ago, I smoked for twenty years before that",
+      "any night sweats or unintentional weight loss": "no weight loss, but I have been sweating at night"
+    },
+    "available_tests": ["chest_xray", "CBC", "BMP", "blood_cultures", "sputum_culture", "procalcitonin", "urinary_antigen_legionella"],
+    "test_results": {
+      "chest_xray": "right lower lobe consolidation with air bronchograms, consistent with lobar pneumonia",
+      "CBC": "WBC 18.4 x10^9/L with neutrophilia, hemoglobin 12.1 g/dL, platelets 410",
+      "BMP": "glucose 188 mg/dL, BUN 22, creatinine 1.1 mg/dL, electrolytes normal",
+      "blood_cultures": "pending, gram-positive diplococci on preliminary gram stain",
+      "sputum_culture": "moderate growth Streptococcus pneumoniae, pan-sensitive",
+      "procalcitonin": "elevated at 1.8 ng/mL",
+      "urinary_antigen_legionella": "negative"
+    },
+    "gold_diagnosis": "community_acquired_pneumonia",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["chest_xray", "CBC"],
+    "gold_differential": ["community_acquired_pneumonia", "acute_bronchitis", "pulmonary_embolism"],
+    "scoring_hints": {
+      "critical_symptoms": ["productive_cough", "fever", "pleuritic_chest_pain", "low_oxygen_saturation", "tachycardia"],
+      "diagnosis_keywords": ["pneumonia", "community acquired pneumonia", "CAP", "lobar pneumonia"],
+      "triage_keywords": ["urgent", "admission", "antibiotics"]
+    }
+  },
+  {
+    "id": "case_003",
+    "difficulty": "easy",
+    "chief_complaint": "It burns terribly when I urinate and I feel like I have to go every five minutes.",
+    "age": 28,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "112/70",
+      "heart_rate": 74,
+      "temperature": 37.2,
+      "respiratory_rate": 14,
+      "oxygen_saturation": 99
+    },
+    "symptom_responses": {
+      "describe the burning when you urinate": "it is a severe burning and stinging throughout urination, it started about two days ago",
+      "how often do you feel the urge to urinate": "every 10 to 15 minutes but only a little comes out each time",
+      "do you have any back or flank pain": "no, just pelvic discomfort, nothing in my back",
+      "do you notice any blood in your urine": "I think so, the urine looked pinkish this morning",
+      "do you have fever or chills": "no fever, I feel okay otherwise",
+      "do you have vaginal discharge or odor": "no, nothing unusual there",
+      "are you sexually active": "yes, I am sexually active",
+      "when was your last menstrual period": "about two weeks ago, it was normal",
+      "have you had urinary tract infections before": "yes, I get them once or twice a year",
+      "are you on any medications or have any medical history": "I take oral contraceptives, no other medical problems"
+    },
+    "available_tests": ["urinalysis", "urine_culture", "CBC", "BMP", "urine_pregnancy_test", "STI_swab"],
+    "test_results": {
+      "urinalysis": "positive nitrites, large leukocyte esterase, WBC >50/hpf, RBC 10-20/hpf, bacteria present",
+      "urine_culture": "pending, >100,000 CFU/mL E. coli expected based on dipstick",
+      "CBC": "WBC 9.2 x10^9/L, normal differential",
+      "BMP": "normal, creatinine 0.7 mg/dL",
+      "urine_pregnancy_test": "negative",
+      "STI_swab": "negative for gonorrhea and chlamydia"
+    },
+    "gold_diagnosis": "uncomplicated_urinary_tract_infection",
+    "gold_triage_level": "non-urgent",
+    "gold_key_tests": ["urinalysis"],
+    "gold_differential": ["uncomplicated_urinary_tract_infection", "urethritis", "vaginitis"],
+    "scoring_hints": {
+      "critical_symptoms": ["dysuria", "urinary_frequency", "urgency", "hematuria"],
+      "diagnosis_keywords": ["urinary tract infection", "UTI", "cystitis", "bladder infection"],
+      "triage_keywords": ["non-urgent", "outpatient", "antibiotics prescription"]
+    }
+  },
+  {
+    "id": "case_004",
+    "difficulty": "easy",
+    "chief_complaint": "I have a terrible pounding headache on one side of my head, and lights are killing me.",
+    "age": 31,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "124/78",
+      "heart_rate": 80,
+      "temperature": 37.0,
+      "respiratory_rate": 15,
+      "oxygen_saturation": 99
+    },
+    "symptom_responses": {
+      "describe your headache": "it is a severe throbbing pain on my left side, it feels like my head is pounding with every heartbeat",
+      "when did it start": "it started about four hours ago, and before it came on I saw zigzag lines and flashing lights for about 20 minutes",
+      "are you sensitive to light or sound": "yes, both are unbearable right now, I need the room dark and quiet",
+      "do you have nausea or vomiting": "yes, I am very nauseous and vomited once",
+      "have you had headaches like this before": "yes, I have had migraines since I was a teenager, but this one is severe",
+      "what is your usual migraine treatment": "I usually take sumatriptan at home but I ran out",
+      "did anything trigger this headache": "I did not sleep well last night and I have been very stressed at work",
+      "any fever, neck stiffness, or rash": "no fever, no stiff neck, no rash",
+      "any weakness, vision loss, or speech problems": "no, just the usual visual aura I always get before my migraines",
+      "are you on any preventive medications": "yes, I take topiramate daily for migraine prevention"
+    },
+    "available_tests": ["CT_head", "MRI_head_brain", "CBC", "BMP", "lumbar_puncture", "ESR_CRP"],
+    "test_results": {
+      "CT_head": "no acute intracranial abnormality, no hemorrhage, no mass effect",
+      "MRI_head_brain": "no acute infarct, no structural lesion, normal study",
+      "CBC": "normal",
+      "BMP": "normal",
+      "lumbar_puncture": "not indicated based on clinical presentation",
+      "ESR_CRP": "normal"
+    },
+    "gold_diagnosis": "migraine_with_aura",
+    "gold_triage_level": "semi-urgent",
+    "gold_key_tests": ["CT_head"],
+    "gold_differential": ["migraine_with_aura", "tension_headache", "subarachnoid_hemorrhage"],
+    "scoring_hints": {
+      "critical_symptoms": ["unilateral_throbbing_headache", "photophobia", "phonophobia", "nausea", "visual_aura"],
+      "diagnosis_keywords": ["migraine", "migraine with aura", "classic migraine", "hemicranial headache"],
+      "triage_keywords": ["semi-urgent", "analgesia", "antiemetic", "triptans"]
+    }
+  },
+  {
+    "id": "case_005",
+    "difficulty": "easy",
+    "chief_complaint": "I fell on my outstretched hand and my wrist is swollen and very painful.",
+    "age": 45,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "134/88",
+      "heart_rate": 86,
+      "temperature": 36.8,
+      "respiratory_rate": 16,
+      "oxygen_saturation": 99
+    },
+    "symptom_responses": {
+      "tell me what happened": "I slipped on ice outside my house about two hours ago and caught myself with my right hand",
+      "where exactly does it hurt": "right at my wrist, just above the thumb side, and it is very tender to touch",
+      "did you hear a crack or pop": "yes, I heard a loud crack when I fell",
+      "can you move your wrist": "barely, any movement hurts a lot and it is very stiff",
+      "is there visible deformity": "yes, it looks a bit bent compared to my other wrist",
+      "do you have numbness or tingling in your fingers": "my thumb and index finger feel a little numb",
+      "can you make a fist": "no, I cannot close my hand all the way",
+      "do you have any medical history": "I have osteoporosis, I take calcium and vitamin D",
+      "have you broken anything before": "yes, I had a hip fracture two years ago",
+      "what is your pain level": "it is an 8 out of 10, very sharp"
+    },
+    "available_tests": ["wrist_xray", "hand_xray", "CT_wrist", "CBC", "BMP", "nerve_conduction_study"],
+    "test_results": {
+      "wrist_xray": "displaced distal radius fracture with dorsal angulation, consistent with Colles fracture, no involvement of the radiocarpal joint",
+      "hand_xray": "no additional fractures identified in the hand or fingers",
+      "CT_wrist": "comminuted distal radius fracture with intra-articular extension",
+      "CBC": "normal",
+      "BMP": "normal, calcium 9.2 mg/dL",
+      "nerve_conduction_study": "not yet performed"
+    },
+    "gold_diagnosis": "distal_radius_fracture",
+    "gold_triage_level": "semi-urgent",
+    "gold_key_tests": ["wrist_xray"],
+    "gold_differential": ["distal_radius_fracture", "scaphoid_fracture", "wrist_sprain"],
+    "scoring_hints": {
+      "critical_symptoms": ["wrist_pain", "deformity", "fall_on_outstretched_hand", "swelling", "decreased_range_of_motion"],
+      "diagnosis_keywords": ["distal radius fracture", "Colles fracture", "wrist fracture", "broken wrist"],
+      "triage_keywords": ["semi-urgent", "orthopedic", "reduction", "splinting"]
+    }
+  },
+  {
+    "id": "case_006",
+    "difficulty": "easy",
+    "chief_complaint": "I am wheezing badly and can barely breathe, my inhaler is not helping.",
+    "age": 19,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "138/90",
+      "heart_rate": 118,
+      "temperature": 37.1,
+      "respiratory_rate": 26,
+      "oxygen_saturation": 91
+    },
+    "symptom_responses": {
+      "describe your breathing difficulty": "I cannot get enough air in, every breath is hard work and I am wheezing loudly",
+      "when did this start": "about two hours ago, I was walking my dog and it came on suddenly",
+      "have you used your inhaler": "yes, I used my albuterol inhaler six times in the last hour and it is not helping",
+      "do you have a history of asthma": "yes, since childhood, but it is usually well controlled",
+      "what triggered this episode": "I think it was the cold air and pollen, and I might have a cold coming on",
+      "any chest tightness": "yes, my chest feels very tight like something is squeezing it",
+      "are you coughing": "yes, a dry hacking cough that will not stop",
+      "any fever": "I feel a little warm but no confirmed fever",
+      "what medications do you take": "albuterol as needed and fluticasone inhaler twice daily",
+      "have you ever been intubated or in the ICU for asthma": "I was hospitalized once at age 14 but not intubated"
+    },
+    "available_tests": ["peak_flow", "chest_xray", "ABG", "CBC", "BMP", "spirometry"],
+    "test_results": {
+      "peak_flow": "38% of predicted, severely reduced",
+      "chest_xray": "hyperinflated lungs, no consolidation, no pneumothorax",
+      "ABG": "pH 7.47, pCO2 32 mmHg, pO2 62 mmHg on room air, mild respiratory alkalosis with hypoxemia",
+      "CBC": "WBC 11.2 x10^9/L with mild eosinophilia, hemoglobin normal",
+      "BMP": "potassium 3.4 mEq/L, otherwise normal",
+      "spirometry": "not performed during acute exacerbation"
+    },
+    "gold_diagnosis": "acute_asthma_exacerbation",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["peak_flow", "chest_xray"],
+    "gold_differential": ["acute_asthma_exacerbation", "anaphylaxis", "vocal_cord_dysfunction"],
+    "scoring_hints": {
+      "critical_symptoms": ["wheezing", "dyspnea", "bronchospasm", "inhaler_unresponsive", "low_oxygen_saturation"],
+      "diagnosis_keywords": ["asthma exacerbation", "asthma attack", "acute asthma", "bronchospasm"],
+      "triage_keywords": ["urgent", "bronchodilators", "steroids", "nebulizer"]
+    }
+  },
+  {
+    "id": "case_007",
+    "difficulty": "easy",
+    "chief_complaint": "I was stung by a bee about 15 minutes ago and now my throat feels like it is closing.",
+    "age": 35,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "84/52",
+      "heart_rate": 128,
+      "temperature": 37.0,
+      "respiratory_rate": 24,
+      "oxygen_saturation": 95
+    },
+    "symptom_responses": {
+      "where were you stung": "on my right forearm while working in the garden",
+      "do you have a known allergy to bees": "yes, I was told to carry an EpiPen after a reaction two years ago",
+      "did you use your EpiPen": "no, I left it at home today",
+      "describe what happened after the sting": "within a few minutes my whole body started itching and I broke out in hives",
+      "is your throat swelling": "yes, it feels very tight and my voice sounds different",
+      "do you have difficulty swallowing": "yes, it is hard to swallow",
+      "do you feel dizzy or lightheaded": "yes, very dizzy, I almost passed out",
+      "do you have any hives or rash": "yes, red welts all over my arms, chest, and face",
+      "are you having trouble breathing": "yes, I can breathe but it is tight and wheezy",
+      "any stomach cramps or vomiting": "yes, I feel nauseous and my stomach is cramping"
+    },
+    "available_tests": ["serum_tryptase", "CBC", "BMP", "skin_prick_test", "IgE_panel", "ABG"],
+    "test_results": {
+      "serum_tryptase": "elevated at 38 mcg/L, drawn 1 hour post-sting",
+      "CBC": "WBC 12.4 x10^9/L with eosinophilia 8%, hemoconcentration",
+      "BMP": "normal electrolytes, creatinine 1.0 mg/dL",
+      "skin_prick_test": "not performed acutely",
+      "IgE_panel": "specific IgE to bee venom elevated at 3.2 kU/L",
+      "ABG": "pH 7.42, pO2 72 mmHg on supplemental oxygen"
+    },
+    "gold_diagnosis": "anaphylaxis",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["serum_tryptase"],
+    "gold_differential": ["anaphylaxis", "severe_allergic_reaction", "vasovagal_syncope"],
+    "scoring_hints": {
+      "critical_symptoms": ["throat_swelling", "hypotension", "tachycardia", "urticaria", "bee_sting", "angioedema"],
+      "diagnosis_keywords": ["anaphylaxis", "anaphylactic shock", "severe allergic reaction", "anaphylactic reaction"],
+      "triage_keywords": ["immediate", "epinephrine", "critical", "code"]
+    }
+  },
+  {
+    "id": "case_008",
+    "difficulty": "easy",
+    "chief_complaint": "I have been vomiting, feeling very thirsty, and my vision is blurry for two days.",
+    "age": 24,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "98/62",
+      "heart_rate": 122,
+      "temperature": 37.3,
+      "respiratory_rate": 28,
+      "oxygen_saturation": 98
+    },
+    "symptom_responses": {
+      "do you have diabetes": "yes, I have type 1 diabetes since age 10",
+      "have you been taking your insulin": "I ran out of insulin two days ago and could not get more",
+      "describe how you have been feeling": "I am exhausted, vomiting constantly, extremely thirsty but cannot keep anything down",
+      "does your breath have an unusual smell": "my boyfriend said my breath smells sweet or fruity",
+      "have you been urinating more than usual": "yes, I have been going to the bathroom constantly",
+      "do you have abdominal pain": "yes, crampy pain all over my belly",
+      "do you feel confused or foggy": "I feel foggy and cannot think clearly",
+      "when was the last time your blood sugar was checked": "two days ago it was over 400 on my meter",
+      "any recent illness or infection": "I had a sore throat last week",
+      "have you had DKA before": "yes, once before when I was 17"
+    },
+    "available_tests": ["blood_glucose", "ABG", "BMP", "CBC", "urine_ketones", "serum_ketones", "HbA1c"],
+    "test_results": {
+      "blood_glucose": "624 mg/dL",
+      "ABG": "pH 7.18, pCO2 22 mmHg, bicarbonate 8 mEq/L, anion gap 28 - severe metabolic acidosis",
+      "BMP": "sodium 131 mEq/L, potassium 5.8 mEq/L, bicarbonate 8 mEq/L, BUN 28, creatinine 1.4 mg/dL",
+      "CBC": "WBC 15.2 x10^9/L, hemoglobin 13.8 g/dL",
+      "urine_ketones": "large ketones",
+      "serum_ketones": "strongly positive, beta-hydroxybutyrate 7.8 mmol/L",
+      "HbA1c": "12.4%"
+    },
+    "gold_diagnosis": "diabetic_ketoacidosis",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["blood_glucose", "ABG", "serum_ketones"],
+    "gold_differential": ["diabetic_ketoacidosis", "hyperglycemic_hyperosmolar_state", "alcoholic_ketoacidosis"],
+    "scoring_hints": {
+      "critical_symptoms": ["vomiting", "polyuria", "polydipsia", "fruity_breath", "tachycardia", "hypotension", "Kussmaul_breathing"],
+      "diagnosis_keywords": ["diabetic ketoacidosis", "DKA", "ketoacidosis", "diabetic emergency"],
+      "triage_keywords": ["immediate", "critical", "ICU", "insulin drip"]
+    }
+  },
+  {
+    "id": "case_009",
+    "difficulty": "easy",
+    "chief_complaint": "I have been vomiting and having diarrhea since last night, and my whole family is sick too.",
+    "age": 42,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "122/80",
+      "heart_rate": 88,
+      "temperature": 37.6,
+      "respiratory_rate": 16,
+      "oxygen_saturation": 99
+    },
+    "symptom_responses": {
+      "when did your symptoms start": "last night around 10 PM, about 6 hours after a family dinner",
+      "who else is sick": "my wife and both kids are also vomiting and have diarrhea",
+      "what did you eat at the family dinner": "we had a potluck, there was potato salad and deviled eggs that sat out for a while",
+      "describe your diarrhea": "watery, no blood, crampy abdominal pain before each episode",
+      "how many times have you vomited": "about five times last night, less today",
+      "do you have a high fever or chills": "I feel warm but no rigors",
+      "any blood in your stool": "no, it is just watery diarrhea",
+      "can you keep any fluids down": "I can sip water now and it stays down",
+      "do you have any medical history": "no, I am healthy",
+      "have you traveled recently or eaten at a restaurant": "no travel, just the family dinner"
+    },
+    "available_tests": ["stool_culture", "stool_ova_parasites", "CBC", "BMP", "rotavirus_antigen", "norovirus_PCR"],
+    "test_results": {
+      "stool_culture": "no pathogenic bacteria isolated",
+      "stool_ova_parasites": "negative",
+      "CBC": "WBC 9.8 x10^9/L, normal",
+      "BMP": "sodium 138 mEq/L, potassium 3.6 mEq/L, creatinine 1.1 mg/dL, mildly elevated BUN 18",
+      "rotavirus_antigen": "negative",
+      "norovirus_PCR": "positive"
+    },
+    "gold_diagnosis": "viral_gastroenteritis",
+    "gold_triage_level": "non-urgent",
+    "gold_key_tests": ["BMP"],
+    "gold_differential": ["viral_gastroenteritis", "food_poisoning", "bacterial_gastroenteritis"],
+    "scoring_hints": {
+      "critical_symptoms": ["vomiting", "diarrhea", "family_cluster", "shared_meal", "no_blood_in_stool"],
+      "diagnosis_keywords": ["viral gastroenteritis", "stomach flu", "norovirus", "gastroenteritis", "food poisoning"],
+      "triage_keywords": ["non-urgent", "supportive care", "oral rehydration", "hydration"]
+    }
+  },
+  {
+    "id": "case_010",
+    "difficulty": "easy",
+    "chief_complaint": "My left leg has been red, warm, and swollen for two days after I scraped it.",
+    "age": 55,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "136/84",
+      "heart_rate": 90,
+      "temperature": 38.0,
+      "respiratory_rate": 16,
+      "oxygen_saturation": 98
+    },
+    "symptom_responses": {
+      "how did you injure your leg": "I scraped my shin on a garden fence three days ago, just a small cut",
+      "describe the redness": "it started as a small red area around the cut but now has spread quite a bit up my calf",
+      "is there any pus or discharge": "yes, there is some yellowish fluid weeping from the original cut",
+      "how is the pain": "it throbs constantly and is very tender to touch",
+      "have you noticed any red streaking up your leg": "yes, there are some red lines going up toward my knee",
+      "do you have any chills": "yes, I had chills this morning",
+      "do you have diabetes or take steroids": "I have type 2 diabetes, controlled with metformin",
+      "any previous skin infections": "I had one on my arm last year that needed antibiotics",
+      "have you taken any antibiotics yet": "no, I hoped it would go away on its own",
+      "any swelling in your groin": "my doctor said once that I have enlarged groin nodes, but I am not sure right now"
+    },
+    "available_tests": ["CBC", "CRP", "blood_cultures", "wound_swab", "skin_ultrasound", "BMP"],
+    "test_results": {
+      "CBC": "WBC 16.8 x10^9/L with neutrophilia",
+      "CRP": "elevated at 82 mg/L",
+      "blood_cultures": "pending, two sets drawn",
+      "wound_swab": "gram-positive cocci in clusters suggestive of Staphylococcus aureus",
+      "skin_ultrasound": "skin thickening and subcutaneous edema consistent with cellulitis, no abscess collection identified",
+      "BMP": "glucose 142 mg/dL, creatinine 1.0 mg/dL, otherwise normal"
+    },
+    "gold_diagnosis": "cellulitis",
+    "gold_triage_level": "semi-urgent",
+    "gold_key_tests": ["CBC", "blood_cultures"],
+    "gold_differential": ["cellulitis", "DVT_with_inflammation", "necrotizing_fasciitis"],
+    "scoring_hints": {
+      "critical_symptoms": ["erythema", "warmth", "swelling", "skin_break", "lymphangitis", "fever"],
+      "diagnosis_keywords": ["cellulitis", "skin infection", "soft tissue infection", "bacterial skin infection"],
+      "triage_keywords": ["semi-urgent", "IV antibiotics", "admission", "dermatology"]
+    }
+  },
+  {
+    "id": "case_011",
+    "difficulty": "easy",
+    "chief_complaint": "I have a dull pressure headache all over my head that has been there since this morning.",
+    "age": 38,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "126/82",
+      "heart_rate": 72,
+      "temperature": 36.9,
+      "respiratory_rate": 14,
+      "oxygen_saturation": 99
+    },
+    "symptom_responses": {
+      "describe the headache": "it feels like a tight band or pressure around my entire head, not throbbing",
+      "where does it hurt most": "both sides equally, like a band squeezing my temples and forehead",
+      "how long have you had tension headaches": "I get these regularly, usually related to stress",
+      "have you been under stress lately": "yes, I have an important work deadline today",
+      "any nausea or vomiting": "mild nausea but I have not vomited",
+      "are you sensitive to light or sound": "mild sensitivity, but nothing like my friend's migraines",
+      "any fever or neck stiffness": "no fever, no stiff neck at all",
+      "have you taken anything for the pain": "I took ibuprofen this morning but it only helped a little",
+      "any vision changes or neurological symptoms": "no, vision is normal, no weakness or numbness",
+      "how would you rate your pain": "about a 4 out of 10"
+    },
+    "available_tests": ["CT_head", "MRI_head_brain", "CBC", "BMP", "ESR_CRP", "lumbar_puncture"],
+    "test_results": {
+      "CT_head": "normal, no intracranial pathology",
+      "MRI_head_brain": "normal",
+      "CBC": "normal",
+      "BMP": "normal",
+      "ESR_CRP": "normal",
+      "lumbar_puncture": "not indicated"
+    },
+    "gold_diagnosis": "tension_headache",
+    "gold_triage_level": "non-urgent",
+    "gold_key_tests": ["CT_head"],
+    "gold_differential": ["tension_headache", "cervicogenic_headache", "migraine_without_aura"],
+    "scoring_hints": {
+      "critical_symptoms": ["bilateral_pressure_headache", "band_like_quality", "stress_trigger", "no_photophobia"],
+      "diagnosis_keywords": ["tension headache", "tension-type headache", "stress headache", "muscle contraction headache"],
+      "triage_keywords": ["non-urgent", "outpatient", "analgesics", "stress management"]
+    }
+  },
+  {
+    "id": "case_012",
+    "difficulty": "easy",
+    "chief_complaint": "Every time I roll over in bed or stand up quickly, the room spins violently for about 30 seconds.",
+    "age": 67,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "138/86",
+      "heart_rate": 76,
+      "temperature": 36.8,
+      "respiratory_rate": 15,
+      "oxygen_saturation": 98
+    },
+    "symptom_responses": {
+      "describe the spinning sensation": "the whole room whirls around when I move my head, it is very disorienting",
+      "how long does each episode last": "about 20 to 30 seconds then it settles down, but comes back with movement",
+      "does it happen with any head position": "yes, mainly rolling to my right side in bed and looking up",
+      "any hearing loss or ringing in the ears": "no, my hearing is fine and no ringing",
+      "any nausea with the spinning": "yes, the spinning makes me feel quite nauseous",
+      "have you had this before": "yes, I had something similar about two years ago and was told it would go away",
+      "any recent head trauma or illness": "no trauma, but I had a bad cold last week",
+      "any headache with the dizziness": "no headache at all",
+      "do you have difficulty walking or coordinating": "I feel unsteady during the spinning episodes but normal otherwise",
+      "any history of stroke or neurological conditions": "no stroke, I have hypertension and take lisinopril"
+    },
+    "available_tests": ["CT_head", "MRI_brain", "audiometry", "electronystagmography", "CBC", "BMP"],
+    "test_results": {
+      "CT_head": "no acute intracranial abnormality",
+      "MRI_brain": "no posterior fossa lesion, no stroke, normal study",
+      "audiometry": "mild high-frequency hearing loss consistent with age, no unilateral loss",
+      "electronystagmography": "positive Dix-Hallpike test with geotropic nystagmus on right side",
+      "CBC": "normal",
+      "BMP": "normal"
+    },
+    "gold_diagnosis": "benign_paroxysmal_positional_vertigo",
+    "gold_triage_level": "non-urgent",
+    "gold_key_tests": ["CT_head"],
+    "gold_differential": ["benign_paroxysmal_positional_vertigo", "vestibular_neuritis", "Meniere_disease"],
+    "scoring_hints": {
+      "critical_symptoms": ["positional_vertigo", "brief_episodes", "no_hearing_loss", "no_tinnitus", "nausea"],
+      "diagnosis_keywords": ["BPPV", "benign paroxysmal positional vertigo", "positional vertigo", "inner ear crystals"],
+      "triage_keywords": ["non-urgent", "Epley maneuver", "vestibular", "outpatient"]
+    }
+  },
+  {
+    "id": "case_013",
+    "difficulty": "easy",
+    "chief_complaint": "My blood pressure reading at the pharmacy today was 195 over 115 and I have a bad headache.",
+    "age": 52,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "198/118",
+      "heart_rate": 84,
+      "temperature": 37.0,
+      "respiratory_rate": 16,
+      "oxygen_saturation": 98
+    },
+    "symptom_responses": {
+      "do you have a history of high blood pressure": "yes, I have had hypertension for 10 years",
+      "are you taking your blood pressure medications": "I ran out of amlodipine and lisinopril about a week ago",
+      "describe your headache": "a heavy pounding headache in the back of my head",
+      "do you have any vision changes": "no, my vision is normal",
+      "any chest pain or shortness of breath": "no chest pain, maybe slight shortness of breath but nothing bad",
+      "any weakness, numbness, or slurred speech": "no, everything feels normal except the headache",
+      "any nausea": "yes, mild nausea with the headache",
+      "do you have kidney disease or heart problems": "I was told I have some protein in my urine but nothing more",
+      "any recent stressors or unusual diet": "very stressful week at work, ate a lot of salty food",
+      "any prior episodes of very high blood pressure": "once in the ER two years ago but not this high"
+    },
+    "available_tests": ["ECG", "BMP", "CBC", "urinalysis", "chest_xray", "fundoscopy", "troponin"],
+    "test_results": {
+      "ECG": "left ventricular hypertrophy pattern, no acute ischemic changes",
+      "BMP": "creatinine 1.3 mg/dL mildly elevated, BUN 22, potassium 4.1 mEq/L",
+      "CBC": "normal",
+      "urinalysis": "2+ protein, no RBC casts",
+      "chest_xray": "cardiomegaly, no pulmonary edema",
+      "fundoscopy": "AV nicking and mild arteriovenous changes, no papilledema, no hemorrhages",
+      "troponin": "normal at 0.01 ng/mL"
+    },
+    "gold_diagnosis": "hypertensive_urgency",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["BMP", "ECG", "urinalysis"],
+    "gold_differential": ["hypertensive_urgency", "hypertensive_emergency", "secondary_hypertension"],
+    "scoring_hints": {
+      "critical_symptoms": ["severe_hypertension", "headache", "medication_nonadherence", "no_end_organ_damage"],
+      "diagnosis_keywords": ["hypertensive urgency", "severe hypertension", "uncontrolled hypertension", "hypertensive crisis"],
+      "triage_keywords": ["urgent", "oral antihypertensives", "blood pressure control", "monitoring"]
+    }
+  },
+  {
+    "id": "case_014",
+    "difficulty": "easy",
+    "chief_complaint": "I cut my palm on a broken glass about an hour ago and it will not stop bleeding.",
+    "age": 29,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "120/78",
+      "heart_rate": 88,
+      "temperature": 36.9,
+      "respiratory_rate": 15,
+      "oxygen_saturation": 99
+    },
+    "symptom_responses": {
+      "how did the injury happen": "I was washing dishes and a glass broke and cut my right palm",
+      "how deep does the cut look": "it looks fairly deep, maybe half a centimeter, and gapes open",
+      "how long has it been bleeding": "about an hour, I have been holding pressure but it seeps through the cloth",
+      "can you feel your fingers normally": "yes, all fingers feel normal",
+      "can you move all your fingers": "yes, full movement in all fingers",
+      "any numbness or tingling": "no numbness in any finger",
+      "when did you last have a tetanus shot": "I honestly cannot remember, probably more than 10 years ago",
+      "do you take blood thinners or have a bleeding disorder": "no, I take nothing and no bleeding problems",
+      "is there any glass still in the wound": "I am not sure, I felt something but rinsed it out",
+      "do you have any medical history": "no, I am healthy"
+    },
+    "available_tests": ["wound_xray", "CBC", "coagulation_studies", "BMP", "wound_exploration_bedside", "tetanus_immunization_check"],
+    "test_results": {
+      "wound_xray": "no radio-opaque foreign body identified in the palm",
+      "CBC": "hemoglobin 14.2 g/dL, platelets 234, normal",
+      "coagulation_studies": "PT/INR normal, PTT normal",
+      "BMP": "normal",
+      "wound_exploration_bedside": "full thickness laceration 2.5 cm length through skin and subcutaneous tissue, flexor tendons intact, neurovascular intact",
+      "tetanus_immunization_check": "patient unsure of history, last documented booster more than 10 years ago"
+    },
+    "gold_diagnosis": "hand_laceration",
+    "gold_triage_level": "semi-urgent",
+    "gold_key_tests": ["wound_xray"],
+    "gold_differential": ["hand_laceration", "tendon_injury", "nerve_laceration"],
+    "scoring_hints": {
+      "critical_symptoms": ["laceration", "bleeding", "palm_wound", "glass_injury"],
+      "diagnosis_keywords": ["laceration", "hand laceration", "palm laceration", "wound"],
+      "triage_keywords": ["semi-urgent", "sutures", "wound closure", "tetanus prophylaxis"]
+    }
+  },
+  {
+    "id": "case_015",
+    "difficulty": "medium",
+    "chief_complaint": "I have sudden shortness of breath and sharp chest pain when I breathe, and my left calf has been sore for days.",
+    "age": 48,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "104/68",
+      "heart_rate": 116,
+      "temperature": 37.1,
+      "respiratory_rate": 26,
+      "oxygen_saturation": 90
+    },
+    "symptom_responses": {
+      "when did the breathing problem start": "suddenly about 3 hours ago, I was just sitting at my desk",
+      "describe the chest pain": "sharp stabbing pain on my right side, worse when I take a deep breath",
+      "tell me about the calf pain": "my left calf has been swollen and aching for about four days, I thought I pulled a muscle",
+      "have you traveled recently": "yes, I just got back from a 14-hour flight from Australia three days ago",
+      "do you cough up any blood": "a small amount of pink-tinged sputum this morning",
+      "do you take oral contraceptives": "yes, I have been on the pill for 15 years",
+      "do you smoke": "yes, about half a pack per day",
+      "any previous blood clots": "no, this is the first time",
+      "any family history of clotting disorders": "my mother had a blood clot in her leg once",
+      "do you feel like you might pass out": "I feel very lightheaded and dizzy when I stand"
+    },
+    "available_tests": ["CT_pulmonary_angiography", "D_dimer", "chest_xray", "ECG", "CBC", "BMP", "lower_limb_doppler", "troponin", "ABG", "V_Q_scan"],
+    "test_results": {
+      "CT_pulmonary_angiography": "large bilateral pulmonary emboli with saddle embolus at the main pulmonary artery bifurcation, right heart strain pattern",
+      "D_dimer": "markedly elevated at 8.4 mcg/mL FEU",
+      "chest_xray": "mild cardiomegaly, Hampton's hump in right lower zone",
+      "ECG": "sinus tachycardia, S1Q3T3 pattern, new right bundle branch block",
+      "CBC": "normal, hemoglobin 13.1 g/dL",
+      "BMP": "creatinine 0.9 mg/dL, normal electrolytes",
+      "lower_limb_doppler": "non-compressible left popliteal vein, extensive DVT from calf to popliteal",
+      "troponin": "mildly elevated at 0.08 ng/mL indicating right ventricular strain",
+      "ABG": "pH 7.48, pO2 58 mmHg, pCO2 30 mmHg on room air",
+      "V_Q_scan": "high probability for PE"
+    },
+    "gold_diagnosis": "massive_pulmonary_embolism",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["CT_pulmonary_angiography", "D_dimer", "lower_limb_doppler"],
+    "gold_differential": ["massive_pulmonary_embolism", "pneumonia", "acute_coronary_syndrome"],
+    "scoring_hints": {
+      "critical_symptoms": ["sudden_dyspnea", "pleuritic_chest_pain", "DVT_symptoms", "long_haul_flight", "hemoptysis", "hypoxia"],
+      "diagnosis_keywords": ["pulmonary embolism", "PE", "massive PE", "blood clot in lungs", "thromboembolic disease"],
+      "triage_keywords": ["immediate", "thrombolysis", "anticoagulation", "critical", "emergency"]
+    }
+  },
+  {
+    "id": "case_016",
+    "difficulty": "medium",
+    "chief_complaint": "I have had burning pain in the center of my chest for two hours, especially after bending over.",
+    "age": 55,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "142/90",
+      "heart_rate": 88,
+      "temperature": 37.0,
+      "respiratory_rate": 18,
+      "oxygen_saturation": 97
+    },
+    "symptom_responses": {
+      "describe the chest pain in detail": "it is a burning sensation in the middle of my chest, goes up to my throat sometimes",
+      "does the pain go anywhere else": "it went to my jaw and left shoulder briefly but that seems to have passed",
+      "when exactly did it start": "about two hours ago after a big meal and some wine",
+      "does it get worse with activity or at rest": "it was present at rest but bending over makes it worse",
+      "have you had similar pain before": "yes, I get heartburn regularly, but this feels a bit different and stronger",
+      "do you have nausea or sweating": "yes, I am sweating more than usual and feel sick to my stomach",
+      "do you have shortness of breath": "yes, mild shortness of breath that is new",
+      "do you take antacids or acid medications": "yes, I take omeprazole daily for GERD",
+      "do you have any cardiac history": "no, but my father had a heart attack at 58",
+      "do you smoke or have diabetes": "I smoked for 20 years, quit 5 years ago, and I have high cholesterol"
+    },
+    "available_tests": ["ECG", "troponin", "chest_xray", "BMP", "CBC", "upper_GI_endoscopy", "stress_test", "echocardiogram"],
+    "test_results": {
+      "ECG": "ST depression in leads V4-V6 and lateral leads, no ST elevation",
+      "troponin": "initial troponin 0.12 ng/mL elevated, repeat at 3 hours 0.48 ng/mL rising pattern",
+      "chest_xray": "no acute cardiopulmonary abnormality",
+      "BMP": "normal electrolytes, glucose 112 mg/dL, creatinine 1.1 mg/dL",
+      "CBC": "normal",
+      "upper_GI_endoscopy": "not performed in acute setting",
+      "stress_test": "contraindicated acutely",
+      "echocardiogram": "mild hypokinesis of lateral wall, EF estimated 50%"
+    },
+    "gold_diagnosis": "NSTEMI",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["ECG", "troponin"],
+    "gold_differential": ["NSTEMI", "GERD", "unstable_angina"],
+    "scoring_hints": {
+      "critical_symptoms": ["chest_pain", "jaw_radiation", "left_arm_radiation", "diaphoresis", "nausea", "cardiac_risk_factors"],
+      "diagnosis_keywords": ["NSTEMI", "non-ST elevation myocardial infarction", "heart attack", "ACS", "acute coronary syndrome"],
+      "triage_keywords": ["immediate", "cardiac catheterization", "anticoagulation", "critical"]
+    }
+  },
+  {
+    "id": "case_017",
+    "difficulty": "medium",
+    "chief_complaint": "I have the worst headache of my life and now my neck is so stiff I can barely move it.",
+    "age": 26,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "132/86",
+      "heart_rate": 108,
+      "temperature": 39.2,
+      "respiratory_rate": 20,
+      "oxygen_saturation": 97
+    },
+    "symptom_responses": {
+      "describe your headache": "it is the most severe headache I have ever had, started suddenly about 6 hours ago",
+      "describe the neck stiffness": "my neck is very rigid, I cannot touch my chin to my chest",
+      "do you have any rash": "yes, I noticed small red-purple spots on my legs that did not blanch when I pressed them",
+      "have you been around anyone sick recently": "I live in a college dormitory and a classmate had meningitis recently",
+      "do you have fever and chills": "yes, high fever and rigors",
+      "are you sensitive to light": "yes, extremely, I cannot open my eyes in this room",
+      "do you feel confused or disoriented": "I feel confused and my thinking is foggy",
+      "any nausea or vomiting": "yes, severe nausea and I vomited three times",
+      "have you had migraines before": "yes, occasional migraines but nothing like this and no fever with those",
+      "are you vaccinated against meningococcus": "I do not think I had that vaccine"
+    },
+    "available_tests": ["lumbar_puncture", "CT_head", "CBC", "BMP", "blood_cultures", "CRP_procalcitonin", "meningococcal_PCR", "HIV_test"],
+    "test_results": {
+      "lumbar_puncture": "opening pressure 38 cmH2O elevated, turbid CSF, WBC 4200 cells/uL predominantly neutrophils, protein 280 mg/dL, glucose 32 mg/dL, gram-negative diplococci on gram stain",
+      "CT_head": "no mass lesion, no midline shift, safe to proceed with lumbar puncture",
+      "CBC": "WBC 22.4 x10^9/L with bandemia, hemoglobin 13.8, platelets 88 - low",
+      "BMP": "sodium 128 mEq/L hyponatremia, glucose 84 mg/dL, creatinine normal",
+      "blood_cultures": "pending, gram-negative diplococci anticipated",
+      "CRP_procalcitonin": "CRP 210 mg/L, procalcitonin 22 ng/mL, markedly elevated",
+      "meningococcal_PCR": "positive for Neisseria meningitidis serogroup B",
+      "HIV_test": "negative"
+    },
+    "gold_diagnosis": "bacterial_meningitis",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["lumbar_puncture", "CT_head", "blood_cultures"],
+    "gold_differential": ["bacterial_meningitis", "subarachnoid_hemorrhage", "viral_meningitis"],
+    "scoring_hints": {
+      "critical_symptoms": ["neck_stiffness", "severe_headache", "fever", "photophobia", "petechial_rash", "confusion"],
+      "diagnosis_keywords": ["bacterial meningitis", "meningitis", "meningococcal disease", "meningococcemia"],
+      "triage_keywords": ["immediate", "antibiotics", "critical", "isolation", "emergency"]
+    }
+  },
+  {
+    "id": "case_018",
+    "difficulty": "medium",
+    "chief_complaint": "I have severe lower abdominal pain on my right side and I missed my last period.",
+    "age": 32,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "90/58",
+      "heart_rate": 126,
+      "temperature": 37.2,
+      "respiratory_rate": 22,
+      "oxygen_saturation": 97
+    },
+    "symptom_responses": {
+      "when was your last menstrual period": "about six weeks ago, I am usually very regular",
+      "could you be pregnant": "I had unprotected sex about six weeks ago, so possibly",
+      "describe the abdominal pain": "sharp severe cramping pain on my right lower side that started suddenly two hours ago",
+      "do you have any vaginal bleeding": "yes, some dark spotty bleeding that started yesterday",
+      "do you have shoulder tip pain": "yes, I have an aching pain in my right shoulder that seems strange",
+      "have you had a tubal ligation or IUD": "no, no contraception",
+      "have you had an ectopic pregnancy or pelvic infection before": "I was treated for chlamydia two years ago",
+      "do you feel like you might faint": "yes, I feel very dizzy and faint when I try to stand",
+      "any nausea or vomiting": "yes, severe nausea",
+      "have you done a home pregnancy test": "yes, it was positive this morning"
+    },
+    "available_tests": ["urine_pregnancy_test", "serum_beta_hCG", "transvaginal_ultrasound", "CBC", "BMP", "coagulation_studies", "blood_type_crossmatch", "pelvic_ultrasound"],
+    "test_results": {
+      "urine_pregnancy_test": "positive",
+      "serum_beta_hCG": "4,820 mIU/mL",
+      "transvaginal_ultrasound": "no intrauterine pregnancy identified, right adnexal mass 3.2 cm with ring of fire sign on Doppler, moderate free fluid in pelvis and right paracolic gutter",
+      "CBC": "hemoglobin 9.4 g/dL dropping, WBC 11.2, platelets normal",
+      "BMP": "normal",
+      "coagulation_studies": "normal",
+      "blood_type_crossmatch": "O negative, active type and screen requested",
+      "pelvic_ultrasound": "empty uterus, right adnexal mass, peritoneal fluid"
+    },
+    "gold_diagnosis": "ruptured_ectopic_pregnancy",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["serum_beta_hCG", "transvaginal_ultrasound", "CBC"],
+    "gold_differential": ["ruptured_ectopic_pregnancy", "threatened_miscarriage", "ovarian_torsion"],
+    "scoring_hints": {
+      "critical_symptoms": ["missed_period", "abdominal_pain", "vaginal_bleeding", "shoulder_tip_pain", "hypotension", "tachycardia"],
+      "diagnosis_keywords": ["ectopic pregnancy", "ruptured ectopic", "tubal pregnancy", "ectopic"],
+      "triage_keywords": ["immediate", "surgical emergency", "OB emergency", "critical"]
+    }
+  },
+  {
+    "id": "case_019",
+    "difficulty": "medium",
+    "chief_complaint": "I have severe pain in the middle of my upper belly that goes straight through to my back.",
+    "age": 44,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "108/72",
+      "heart_rate": 108,
+      "temperature": 38.4,
+      "respiratory_rate": 20,
+      "oxygen_saturation": 96
+    },
+    "symptom_responses": {
+      "describe the pain": "a severe boring pain in the middle of my upper belly that goes straight through to my back",
+      "when did it start": "about 6 hours ago, came on after a large meal and several drinks at a party",
+      "does any position help": "slightly better leaning forward, much worse lying flat",
+      "have you vomited": "yes, repeatedly, vomiting does not relieve the pain at all",
+      "how much alcohol do you drink": "I drink heavily, probably a bottle of wine or more daily",
+      "do you have gallstones": "I was told I had gallstones last year but never had them treated",
+      "have you had pancreatitis before": "yes, once two years ago, hospitalized for three days",
+      "can you rate the pain": "it is a 9 out of 10, the worst pain I have had",
+      "any fever": "yes, I am hot and shaking",
+      "any jaundice or yellow eyes": "my girlfriend said my eyes looked a bit yellow this morning"
+    },
+    "available_tests": ["lipase", "amylase", "CBC", "BMP", "LFTs", "abdominal_ultrasound", "CT_abdomen_pelvis", "abdominal_xray"],
+    "test_results": {
+      "lipase": "markedly elevated at 1840 U/L",
+      "amylase": "elevated at 740 U/L",
+      "CBC": "WBC 16.2 x10^9/L with neutrophilia, hematocrit 48%",
+      "BMP": "BUN 28, creatinine 1.6 mg/dL mildly elevated, glucose 210 mg/dL, calcium 7.8 mg/dL low",
+      "LFTs": "ALT 180 U/L elevated, AST 240 U/L elevated, bilirubin 3.2 mg/dL elevated, ALP 220 U/L elevated",
+      "abdominal_ultrasound": "edematous pancreas, gallstones in gallbladder with dilated common bile duct 9 mm",
+      "CT_abdomen_pelvis": "enlarged edematous pancreas with peripancreatic fat stranding and fluid, no necrosis on early imaging",
+      "abdominal_xray": "sentinel loop of small bowel in left upper quadrant"
+    },
+    "gold_diagnosis": "acute_pancreatitis",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["lipase", "abdominal_ultrasound"],
+    "gold_differential": ["acute_pancreatitis", "cholecystitis", "peptic_ulcer_perforation"],
+    "scoring_hints": {
+      "critical_symptoms": ["epigastric_pain_radiating_to_back", "vomiting", "alcohol_use", "gallstones", "fever"],
+      "diagnosis_keywords": ["pancreatitis", "acute pancreatitis", "pancreatic inflammation"],
+      "triage_keywords": ["urgent", "admission", "IV fluids", "NPO"]
+    }
+  },
+  {
+    "id": "case_020",
+    "difficulty": "medium",
+    "chief_complaint": "My wife says I suddenly could not speak properly and my right arm went weak about an hour ago.",
+    "age": 62,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "178/104",
+      "heart_rate": 92,
+      "temperature": 37.1,
+      "respiratory_rate": 18,
+      "oxygen_saturation": 96
+    },
+    "symptom_responses": {
+      "describe what happened": "my words came out jumbled and I could not find the right words to say",
+      "did you have any warning before this": "no, it came on suddenly while I was making breakfast",
+      "is the weakness still present": "yes, my right hand is weak and clumsy",
+      "any facial drooping": "yes, my husband says my right side of my mouth droops",
+      "any vision problems": "yes, I noticed I could not see to my right side",
+      "any headache": "mild headache, not severe",
+      "do you have atrial fibrillation or heart problems": "yes, I have atrial fibrillation and take warfarin",
+      "when did you last take your warfarin": "this morning as usual",
+      "do you have diabetes or high blood pressure": "yes, both, on medications",
+      "have you had a TIA or stroke before": "I had a TIA two years ago with similar symptoms that resolved"
+    },
+    "available_tests": ["CT_head", "MRI_brain_DWI", "ECG", "CBC", "coagulation_studies", "BMP", "carotid_doppler", "echocardiogram", "lipid_panel"],
+    "test_results": {
+      "CT_head": "no hemorrhage identified, subtle hypodensity in left MCA territory suggestive of early ischemic stroke",
+      "MRI_brain_DWI": "diffusion restriction in left middle cerebral artery territory involving Broca area and parietal cortex, consistent with acute ischemic stroke",
+      "ECG": "atrial fibrillation with controlled ventricular response",
+      "CBC": "normal, hemoglobin 13.2 g/dL",
+      "coagulation_studies": "INR 2.1 within therapeutic range",
+      "BMP": "glucose 138 mg/dL, creatinine 1.1 mg/dL, electrolytes normal",
+      "carotid_doppler": "moderate left carotid stenosis 50%",
+      "echocardiogram": "dilated left atrium, no thrombus on TEE",
+      "lipid_panel": "LDL 142 mg/dL elevated"
+    },
+    "gold_diagnosis": "acute_ischemic_stroke",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["CT_head", "MRI_brain_DWI"],
+    "gold_differential": ["acute_ischemic_stroke", "hemorrhagic_stroke", "Todd_paralysis"],
+    "scoring_hints": {
+      "critical_symptoms": ["aphasia", "hemiplegia", "facial_droop", "visual_field_defect", "sudden_onset"],
+      "diagnosis_keywords": ["ischemic stroke", "stroke", "CVA", "cerebrovascular accident", "brain attack"],
+      "triage_keywords": ["immediate", "tPA", "thrombolysis", "stroke team", "code stroke"]
+    }
+  },
+  {
+    "id": "case_021",
+    "difficulty": "medium",
+    "chief_complaint": "I am an elderly man and I have been confused, feverish, and my son says I look very ill for two days.",
+    "age": 70,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "96/60",
+      "heart_rate": 118,
+      "temperature": 38.9,
+      "respiratory_rate": 24,
+      "oxygen_saturation": 93
+    },
+    "symptom_responses": {
+      "can you tell me how you have been feeling": "I feel very weak, confused, and have had a chill all day",
+      "do you have any pain anywhere": "yes, some discomfort in my lower belly and when I urinate",
+      "how long have you been feeling this way": "two days of fever, but I only became confused today",
+      "any cough or respiratory symptoms": "a mild cough but nothing major",
+      "any change in urine color or odor": "my son says my urine smells very strong and looks dark",
+      "do you have a urinary catheter or prostate problems": "yes, I have benign prostatic hyperplasia and sometimes cannot empty my bladder",
+      "any nausea or vomiting": "yes, I vomited twice today",
+      "what medications do you take": "lisinopril, metoprolol, and aspirin",
+      "any recent procedures or hospitalizations": "I had a cystoscopy procedure three weeks ago",
+      "do you have diabetes": "yes, type 2 diabetes, on metformin"
+    },
+    "available_tests": ["blood_cultures", "urinalysis", "urine_culture", "CBC", "BMP", "lactate", "CRP_procalcitonin", "chest_xray", "CT_abdomen_pelvis"],
+    "test_results": {
+      "blood_cultures": "two of two sets positive for gram-negative rods, preliminary",
+      "urinalysis": "large leukocyte esterase, positive nitrites, WBC too numerous to count, RBC 15/hpf",
+      "urine_culture": "pending, expected >100,000 CFU/mL E. coli",
+      "CBC": "WBC 22.8 x10^9/L with bandemia, hemoglobin 11.4 g/dL, platelets 98 - low",
+      "BMP": "creatinine 2.4 mg/dL elevated from baseline 1.2, BUN 48, sodium 132 mEq/L",
+      "lactate": "4.2 mmol/L significantly elevated",
+      "CRP_procalcitonin": "CRP 280 mg/L, procalcitonin 18 ng/mL markedly elevated",
+      "chest_xray": "no pneumonia, no effusion",
+      "CT_abdomen_pelvis": "enlarged prostate, bilateral perinephric stranding, no abscess"
+    },
+    "gold_diagnosis": "urosepsis",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["blood_cultures", "urinalysis", "lactate", "CBC"],
+    "gold_differential": ["urosepsis", "pneumonia_sepsis", "intra_abdominal_sepsis"],
+    "scoring_hints": {
+      "critical_symptoms": ["fever", "hypotension", "tachycardia", "confusion", "urinary_symptoms", "recent_urological_procedure"],
+      "diagnosis_keywords": ["urosepsis", "sepsis", "urinary tract sepsis", "severe sepsis", "septic shock"],
+      "triage_keywords": ["immediate", "sepsis protocol", "antibiotics", "IV fluids", "ICU"]
+    }
+  },
+  {
+    "id": "case_022",
+    "difficulty": "medium",
+    "chief_complaint": "I have severe crampy pain on my right side that comes in waves and my urine looks like cola.",
+    "age": 38,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "148/94",
+      "heart_rate": 106,
+      "temperature": 37.4,
+      "respiratory_rate": 20,
+      "oxygen_saturation": 98
+    },
+    "symptom_responses": {
+      "describe the pain in detail": "it comes in waves, extremely intense crampy pain starting in my right flank that moves down toward my groin",
+      "when did this start": "suddenly about 4 hours ago, worst pain I have ever felt",
+      "does it go anywhere else": "yes, it radiates down to my right testicle",
+      "describe your urine": "it is dark red-brown, like tea or cola color",
+      "can you find a comfortable position": "no, I cannot stay still, I keep moving trying to get comfortable",
+      "any nausea or vomiting": "yes, severe nausea and vomited several times",
+      "have you had kidney stones before": "yes, once three years ago, passed it at home",
+      "do you drink enough water daily": "probably not, I drink mostly coffee and soda",
+      "any fever or chills": "mild warmth, no real chills",
+      "any problems urinating": "it burns slightly and I feel urgency"
+    },
+    "available_tests": ["urinalysis", "CT_abdomen_pelvis_no_contrast", "abdominal_xray", "CBC", "BMP", "uric_acid", "renal_ultrasound", "urine_culture"],
+    "test_results": {
+      "urinalysis": "large hematuria, 50-100 RBC/hpf, no WBC, no bacteria, no casts",
+      "CT_abdomen_pelvis_no_contrast": "5 mm calculus at the right ureterovesical junction with proximal hydroureteronephrosis, no signs of perforation",
+      "abdominal_xray": "radiopaque density in the region of the right ureterovesical junction",
+      "CBC": "WBC 10.8 x10^9/L, mildly elevated, hemoglobin 14.6 g/dL",
+      "BMP": "creatinine 1.3 mg/dL, BUN 20, potassium 3.8 mEq/L",
+      "uric_acid": "elevated at 8.4 mg/dL",
+      "renal_ultrasound": "right hydronephrosis, no left-sided abnormality",
+      "urine_culture": "negative"
+    },
+    "gold_diagnosis": "ureterolithiasis",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["CT_abdomen_pelvis_no_contrast", "urinalysis"],
+    "gold_differential": ["ureterolithiasis", "acute_appendicitis", "renal_colic"],
+    "scoring_hints": {
+      "critical_symptoms": ["flank_pain_radiating_to_groin", "hematuria", "colicky_pain", "nausea", "inability_to_find_comfortable_position"],
+      "diagnosis_keywords": ["kidney stone", "ureterolithiasis", "nephrolithiasis", "ureteral stone", "renal colic"],
+      "triage_keywords": ["urgent", "pain management", "urology", "hydration"]
+    }
+  },
+  {
+    "id": "case_023",
+    "difficulty": "medium",
+    "chief_complaint": "My heart has been racing and fluttering irregularly for the past three hours and I feel faint.",
+    "age": 65,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "100/68",
+      "heart_rate": 148,
+      "temperature": 37.0,
+      "respiratory_rate": 20,
+      "oxygen_saturation": 94
+    },
+    "symptom_responses": {
+      "describe the heart problem": "it is racing very fast and feels completely irregular, like it is flopping around",
+      "when did this start": "suddenly about three hours ago, while I was at rest watching television",
+      "have you had this before": "yes, I was diagnosed with atrial fibrillation last year",
+      "are you on any cardiac medications": "yes, I take rivaroxaban and metoprolol",
+      "do you feel chest pain": "no chest pain, but I feel pressure in my chest",
+      "do you have shortness of breath": "yes, noticeable shortness of breath with any activity and even at rest",
+      "do you feel faint or have you blacked out": "I feel very faint and dizzy",
+      "any thyroid problems or recent illness": "I have hypothyroidism and forgot to take my levothyroxine for a few days",
+      "do you drink alcohol": "I had more wine than usual at a dinner party last night",
+      "any leg swelling or recent travel": "mild ankle swelling bilaterally"
+    },
+    "available_tests": ["ECG", "CBC", "BMP", "thyroid_function_tests", "troponin", "chest_xray", "echocardiogram", "holter_monitor"],
+    "test_results": {
+      "ECG": "atrial fibrillation with rapid ventricular response at 148 bpm, no ST changes, left ventricular hypertrophy",
+      "CBC": "normal",
+      "BMP": "potassium 3.2 mEq/L mildly low, creatinine 1.0 mg/dL, normal electrolytes otherwise",
+      "thyroid_function_tests": "TSH 8.4 mIU/L elevated indicating hypothyroidism, free T4 low",
+      "troponin": "normal at 0.02 ng/mL",
+      "chest_xray": "mild cardiomegaly, no pulmonary edema",
+      "echocardiogram": "mildly dilated left atrium, preserved EF 55%, no thrombus",
+      "holter_monitor": "not applicable in acute setting"
+    },
+    "gold_diagnosis": "atrial_fibrillation_with_rapid_ventricular_response",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["ECG", "BMP", "thyroid_function_tests"],
+    "gold_differential": ["atrial_fibrillation_with_rapid_ventricular_response", "atrial_flutter", "SVT"],
+    "scoring_hints": {
+      "critical_symptoms": ["palpitations", "irregular_rhythm", "hypotension", "dyspnea", "known_AF"],
+      "diagnosis_keywords": ["atrial fibrillation", "AF with RVR", "AFib", "rapid AF", "atrial fibrillation with rapid ventricular response"],
+      "triage_keywords": ["urgent", "rate control", "cardioversion", "anticoagulation"]
+    }
+  },
+  {
+    "id": "case_024",
+    "difficulty": "medium",
+    "chief_complaint": "I cannot breathe when I lie flat and my legs are so swollen I cannot put my shoes on.",
+    "age": 72,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "158/98",
+      "heart_rate": 104,
+      "temperature": 36.9,
+      "respiratory_rate": 26,
+      "oxygen_saturation": 88
+    },
+    "symptom_responses": {
+      "tell me about the breathing problem": "I have been short of breath for a week, getting worse, and I wake up at night gasping",
+      "how many pillows do you sleep on": "three pillows, if I lie flat I feel like I am drowning",
+      "when did the leg swelling start": "about two weeks ago, now both legs are swollen up to my knees",
+      "do you have heart failure": "yes, I have had congestive heart failure for five years",
+      "have you been taking your medications": "I ran out of furosemide two weeks ago and have not refilled it",
+      "have you gained weight recently": "yes, about 8 pounds in the last week",
+      "do you have a cough": "yes, a wet cough that sometimes brings up pink frothy mucus",
+      "any chest pain": "mild chest tightness but no severe pain",
+      "do you eat a lot of salt": "yes, my wife has been away and I have been eating a lot of salty foods",
+      "do you feel dizzy when you stand": "not dizzy, more like I cannot exert myself at all"
+    },
+    "available_tests": ["BNP", "chest_xray", "ECG", "CBC", "BMP", "troponin", "echocardiogram", "ABG"],
+    "test_results": {
+      "BNP": "markedly elevated at 2840 pg/mL",
+      "chest_xray": "cardiomegaly, bilateral pulmonary edema with Kerley B lines, bilateral pleural effusions",
+      "ECG": "sinus tachycardia, left bundle branch block, left ventricular hypertrophy",
+      "CBC": "hemoglobin 10.8 g/dL mild anemia, normal WBC",
+      "BMP": "creatinine 2.2 mg/dL elevated, BUN 42, sodium 130 mEq/L hyponatremia, potassium 5.4 mEq/L",
+      "troponin": "mildly elevated at 0.06 ng/mL from strain",
+      "echocardiogram": "severely reduced EF 22%, dilated cardiomyopathy, moderate mitral regurgitation",
+      "ABG": "pH 7.38, pO2 55 mmHg on room air, hypoxemia"
+    },
+    "gold_diagnosis": "acute_decompensated_heart_failure",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["BNP", "chest_xray", "echocardiogram"],
+    "gold_differential": ["acute_decompensated_heart_failure", "pulmonary_embolism", "COPD_exacerbation"],
+    "scoring_hints": {
+      "critical_symptoms": ["orthopnea", "paroxysmal_nocturnal_dyspnea", "bilateral_edema", "weight_gain", "diuretic_noncompliance"],
+      "diagnosis_keywords": ["heart failure", "congestive heart failure", "CHF", "acute decompensated heart failure", "pulmonary edema"],
+      "triage_keywords": ["urgent", "diuretics", "IV furosemide", "oxygen", "admission"]
+    }
+  },
+  {
+    "id": "case_025",
+    "difficulty": "medium",
+    "chief_complaint": "I have had crampy abdominal pain all over with a very distended belly and I have not passed gas for two days.",
+    "age": 60,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "122/80",
+      "heart_rate": 98,
+      "temperature": 37.8,
+      "respiratory_rate": 20,
+      "oxygen_saturation": 97
+    },
+    "symptom_responses": {
+      "describe the abdominal pain": "crampy pain all over my belly that comes and goes in waves, bloating and very distended",
+      "when did you last pass gas or have a bowel movement": "two days ago, nothing since, no flatus either",
+      "do you have nausea or vomiting": "yes, vomiting what looks like green bile now",
+      "have you had abdominal surgery before": "yes, a hysterectomy 15 years ago",
+      "are you passing any stool at all": "no, completely blocked",
+      "any prior episodes of this": "I was hospitalized once with a bowel obstruction about five years ago",
+      "do you have a history of bowel cancer": "no cancer, but my doctor has been monitoring me with colonoscopies",
+      "do you take any constipating medications": "I take opioid pain medication for back pain",
+      "any fever": "mild warmth but no high fever",
+      "does the pain ever completely go away": "it partially eases between the waves but never fully stops"
+    },
+    "available_tests": ["abdominal_xray", "CT_abdomen_pelvis", "CBC", "BMP", "abdominal_ultrasound", "gastrografin_enema", "LFTs"],
+    "test_results": {
+      "abdominal_xray": "multiple air-fluid levels with dilated loops of small bowel, paucity of gas in colon and rectum, step-ladder pattern",
+      "CT_abdomen_pelvis": "small bowel obstruction with transition point in right iliac fossa, possible adhesive band at site of prior surgery, no free air, no strangulation signs",
+      "CBC": "WBC 12.4 x10^9/L, hemoglobin 11.8 g/dL",
+      "BMP": "sodium 134 mEq/L, potassium 3.1 mEq/L low, creatinine 1.2 mg/dL, BUN 24",
+      "abdominal_ultrasound": "distended fluid-filled loops of small bowel with to-and-fro peristalsis",
+      "gastrografin_enema": "not performed initially",
+      "LFTs": "normal"
+    },
+    "gold_diagnosis": "small_bowel_obstruction",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["abdominal_xray", "CT_abdomen_pelvis"],
+    "gold_differential": ["small_bowel_obstruction", "large_bowel_obstruction", "ileus"],
+    "scoring_hints": {
+      "critical_symptoms": ["abdominal_distension", "inability_to_pass_gas", "bilious_vomiting", "prior_abdominal_surgery", "colicky_pain"],
+      "diagnosis_keywords": ["small bowel obstruction", "bowel obstruction", "intestinal obstruction", "SBO"],
+      "triage_keywords": ["urgent", "surgical consult", "NGT decompression", "NPO"]
+    }
+  },
+  {
+    "id": "case_026",
+    "difficulty": "medium",
+    "chief_complaint": "I have sudden severe pain on my right side that comes and goes and I feel sick to my stomach.",
+    "age": 25,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "116/74",
+      "heart_rate": 112,
+      "temperature": 37.3,
+      "respiratory_rate": 20,
+      "oxygen_saturation": 98
+    },
+    "symptom_responses": {
+      "describe the pain": "sudden onset severe pain in my right lower abdomen, it is excruciating",
+      "when did it start": "about 2 hours ago while I was exercising",
+      "does it come and go or is it constant": "it comes in waves but does not fully go away",
+      "do you have nausea or vomiting": "yes, I have vomited twice from the pain",
+      "when was your last menstrual period": "two weeks ago, it was normal",
+      "could you be pregnant": "no, my partner and I use condoms consistently",
+      "have you had ovarian cysts before": "yes, I was told I had a follicular cyst on my right ovary three months ago",
+      "any fever": "no fever",
+      "does the pain radiate anywhere": "it radiates to my back and right inner thigh",
+      "do you have any urinary symptoms": "no, urination is completely normal"
+    },
+    "available_tests": ["pelvic_ultrasound", "transvaginal_ultrasound", "urine_pregnancy_test", "CBC", "BMP", "urinalysis", "CT_abdomen_pelvis"],
+    "test_results": {
+      "pelvic_ultrasound": "right ovary 8 cm enlarged with heterogeneous echogenicity, absent Doppler flow to right ovary, small free fluid in pelvis",
+      "transvaginal_ultrasound": "right adnexal mass 8 cm with no detectable blood flow on Doppler, highly suspicious for torsion",
+      "urine_pregnancy_test": "negative",
+      "CBC": "WBC 11.2 x10^9/L, hemoglobin 13.8 g/dL",
+      "BMP": "normal",
+      "urinalysis": "normal, no hematuria",
+      "CT_abdomen_pelvis": "enlarged right ovary with midline displacement, thickened ovarian stroma, whirlpool sign of pedicle torsion"
+    },
+    "gold_diagnosis": "ovarian_torsion",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["pelvic_ultrasound", "transvaginal_ultrasound"],
+    "gold_differential": ["ovarian_torsion", "ectopic_pregnancy", "appendicitis"],
+    "scoring_hints": {
+      "critical_symptoms": ["sudden_severe_unilateral_pelvic_pain", "nausea_vomiting", "known_ovarian_cyst", "absent_Doppler_flow"],
+      "diagnosis_keywords": ["ovarian torsion", "adnexal torsion", "twisted ovary"],
+      "triage_keywords": ["urgent", "gynecologic emergency", "surgical", "detorsion"]
+    }
+  },
+  {
+    "id": "case_027",
+    "difficulty": "medium",
+    "chief_complaint": "My elderly father fell last week and now he seems confused and not himself, with a bad headache.",
+    "age": 78,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "148/92",
+      "heart_rate": 78,
+      "temperature": 36.8,
+      "respiratory_rate": 16,
+      "oxygen_saturation": 96
+    },
+    "symptom_responses": {
+      "tell me about the fall": "he fell down a few steps about 10 days ago and hit his head, he refused to go to hospital then",
+      "describe his confusion": "he is not himself, forgetting things, getting confused about where he is, and saying strange things",
+      "does he have a headache": "yes, he has been complaining of a constant dull headache on the left side since the fall",
+      "is he on any blood thinners": "yes, he takes warfarin for atrial fibrillation",
+      "does he have any weakness on one side": "yes, his right hand is a little clumsy",
+      "how has his speech been": "his speech is a bit slurred at times",
+      "any nausea or vomiting": "he vomited this morning, first time",
+      "has his level of consciousness changed": "he is drowsier than usual today",
+      "any previous head injuries or brain problems": "no prior head injuries, has hypertension and AF",
+      "when did you notice he was not right": "the confusion has been coming on gradually over the last three to four days"
+    },
+    "available_tests": ["CT_head", "MRI_brain", "CBC", "coagulation_studies", "BMP", "ECG", "blood_cultures"],
+    "test_results": {
+      "CT_head": "large left-sided chronic subdural hematoma with acute-on-chronic blood products, 18 mm maximum thickness, 8 mm midline shift to the right, mass effect on left hemisphere",
+      "MRI_brain": "confirms large left subdural collection with mixed signal intensity indicating acute and chronic hemorrhage",
+      "CBC": "hemoglobin 11.2 g/dL, WBC normal, platelets 142",
+      "coagulation_studies": "INR 3.8 supratherapeutic",
+      "BMP": "normal electrolytes, creatinine 1.4 mg/dL",
+      "ECG": "atrial fibrillation, no acute changes",
+      "blood_cultures": "not indicated"
+    },
+    "gold_diagnosis": "chronic_subdural_hematoma",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["CT_head", "coagulation_studies"],
+    "gold_differential": ["chronic_subdural_hematoma", "ischemic_stroke", "brain_tumor"],
+    "scoring_hints": {
+      "critical_symptoms": ["head_trauma", "progressive_confusion", "headache", "anticoagulation", "focal_neurological_signs"],
+      "diagnosis_keywords": ["subdural hematoma", "chronic subdural hematoma", "SDH", "subdural hemorrhage"],
+      "triage_keywords": ["urgent", "neurosurgery", "reversal of anticoagulation", "burr hole"]
+    }
+  },
+  {
+    "id": "case_028",
+    "difficulty": "medium",
+    "chief_complaint": "I have a stabbing chest pain that gets much worse when I breathe in, and I had a viral infection last week.",
+    "age": 40,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "128/84",
+      "heart_rate": 100,
+      "temperature": 38.0,
+      "respiratory_rate": 20,
+      "oxygen_saturation": 97
+    },
+    "symptom_responses": {
+      "describe the chest pain": "sharp stabbing pain in the front and left side of my chest",
+      "does it change with position": "yes, it is much worse when I lie flat and much better when I lean forward",
+      "does it radiate anywhere": "yes, to my left shoulder and trapezius",
+      "did you have a recent illness": "yes, a bad flu-like illness about 10 days ago with fever and body aches",
+      "have you ever had this before": "no, this is the first time",
+      "do you have shortness of breath": "mild shortness of breath",
+      "do you hear a scratching sound or has anyone mentioned it": "the triage nurse said she heard a scratching sound with her stethoscope",
+      "do you have any autoimmune conditions": "no, I am healthy otherwise",
+      "are you a young healthy person generally": "yes, I run marathons, very fit",
+      "any leg swelling or recent travel": "no travel, no leg swelling"
+    },
+    "available_tests": ["ECG", "troponin", "CRP_ESR", "chest_xray", "echocardiogram", "CBC", "BMP", "CT_pulmonary_angiography"],
+    "test_results": {
+      "ECG": "diffuse saddle-shaped ST elevation in multiple leads with PR depression, no reciprocal changes",
+      "troponin": "mildly elevated at 0.09 ng/mL",
+      "CRP_ESR": "CRP 84 mg/L elevated, ESR 62 mm/hr elevated",
+      "chest_xray": "globular cardiac silhouette suggesting pericardial effusion",
+      "echocardiogram": "small to moderate pericardial effusion, no tamponade, normal ventricular function",
+      "CBC": "WBC 12.8 x10^9/L with lymphocytosis",
+      "BMP": "normal",
+      "CT_pulmonary_angiography": "no pulmonary embolism, pericardial effusion confirmed"
+    },
+    "gold_diagnosis": "acute_pericarditis",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["ECG", "echocardiogram", "CRP_ESR"],
+    "gold_differential": ["acute_pericarditis", "myocarditis", "NSTEMI"],
+    "scoring_hints": {
+      "critical_symptoms": ["pleuritic_chest_pain", "positional_relief_leaning_forward", "recent_viral_illness", "pericardial_rub"],
+      "diagnosis_keywords": ["pericarditis", "acute pericarditis", "pericardial inflammation", "pericardial effusion"],
+      "triage_keywords": ["urgent", "NSAIDs", "colchicine", "cardiology consult"]
+    }
+  },
+  {
+    "id": "case_029",
+    "difficulty": "hard",
+    "chief_complaint": "I have been profoundly weak, vomiting, with belly pain, and I nearly fainted when I stood up this morning.",
+    "age": 35,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "82/50",
+      "heart_rate": 124,
+      "temperature": 38.2,
+      "respiratory_rate": 22,
+      "oxygen_saturation": 97
+    },
+    "symptom_responses": {
+      "describe how you have been feeling": "extreme fatigue and weakness for weeks, getting dramatically worse the last two days with vomiting and fainting",
+      "do you have any known medical conditions": "yes, I have Addison's disease, diagnosed two years ago",
+      "are you taking your medications": "yes, hydrocortisone and fludrocortisone, but I had a stomach bug for three days and could not keep anything down",
+      "have you had any recent physical stress or illness": "yes, I had gastroenteritis for three days with diarrhea and vomiting",
+      "do you have abdominal pain": "yes, severe cramps all over my belly",
+      "have you noticed any skin color changes recently": "my skin seems darker than usual over the last few months",
+      "do you crave salt": "yes, intensely, I have been craving salty foods",
+      "any confusion or altered consciousness": "I feel confused and foggy",
+      "any headache": "mild headache",
+      "have you ever been hospitalized for your Addison's disease before": "yes, once two years ago with a similar crisis"
+    },
+    "available_tests": ["BMP", "CBC", "cortisol_random", "ACTH_stimulation_test", "blood_cultures", "ECG", "blood_glucose", "thyroid_function_tests"],
+    "test_results": {
+      "BMP": "sodium 122 mEq/L severely low, potassium 6.4 mEq/L severely high, glucose 52 mg/dL low, creatinine 2.1 mg/dL elevated, bicarbonate 14 mEq/L low",
+      "CBC": "hemoglobin 11.8 g/dL, eosinophilia 9%, WBC 9.2 x10^9/L",
+      "cortisol_random": "markedly low at 2.1 mcg/dL, normal should be >18 during stress",
+      "ACTH_stimulation_test": "cortisol fails to rise appropriately after ACTH administration",
+      "blood_cultures": "negative",
+      "ECG": "peaked T waves in multiple leads consistent with hyperkalemia",
+      "blood_glucose": "48 mg/dL hypoglycemic",
+      "thyroid_function_tests": "normal"
+    },
+    "gold_diagnosis": "adrenal_crisis",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["BMP", "cortisol_random"],
+    "gold_differential": ["adrenal_crisis", "septic_shock", "severe_dehydration"],
+    "scoring_hints": {
+      "critical_symptoms": ["profound_weakness", "hypotension", "hyponatremia", "hyperkalemia", "known_Addisons", "inability_to_take_medications"],
+      "diagnosis_keywords": ["adrenal crisis", "Addisonian crisis", "acute adrenal insufficiency", "adrenal failure"],
+      "triage_keywords": ["immediate", "hydrocortisone", "IV steroids", "critical", "emergency"]
+    }
+  },
+  {
+    "id": "case_030",
+    "difficulty": "hard",
+    "chief_complaint": "I have the most severe tearing pain in my chest going to my back that came on suddenly.",
+    "age": 58,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure_right": "180/100",
+      "blood_pressure_left": "142/88",
+      "heart_rate": 112,
+      "temperature": 37.0,
+      "respiratory_rate": 22,
+      "oxygen_saturation": 94
+    },
+    "symptom_responses": {
+      "describe the pain precisely": "it is an unbearable tearing ripping sensation that started suddenly in my chest and went straight to my back between my shoulder blades",
+      "did it come on suddenly or gradually": "instantly, worst pain of my life, hit me like a thunderbolt at maximum intensity",
+      "do you have high blood pressure": "yes, severe hypertension, poorly controlled, I take three medications but miss doses",
+      "do you have Marfan syndrome or a connective tissue disorder": "I have never been diagnosed with that but I am tall and have long arms",
+      "any difference in your arm pulses or blood pressure in each arm": "I feel weaker in my left arm",
+      "do you have any pulse or sensation changes in your legs": "yes, my left leg feels numb",
+      "any history of heart surgery or valve problems": "I had aortic valve replacement 10 years ago",
+      "do you use cocaine or stimulants": "no",
+      "is there a family history of aortic aneurysm": "yes, my brother had an aortic aneurysm",
+      "any associated shortness of breath": "yes, significant shortness of breath"
+    },
+    "initial_vitals": {
+      "blood_pressure": "180/100 right arm, 142/88 left arm",
+      "heart_rate": 112,
+      "temperature": 37.0,
+      "respiratory_rate": 22,
+      "oxygen_saturation": 94
+    },
+    "available_tests": ["CT_aortography", "chest_xray", "ECG", "troponin", "CBC", "BMP", "TEE_echocardiogram", "MRI_aorta"],
+    "test_results": {
+      "CT_aortography": "Stanford Type A aortic dissection with intimal flap from aortic root extending to descending thoracic aorta, pericardial effusion present, left pleural effusion",
+      "chest_xray": "widened mediastinum >8 cm, left pleural effusion",
+      "ECG": "sinus tachycardia, no ST elevation to suggest STEMI",
+      "troponin": "mildly elevated at 0.12 ng/mL from myocardial strain",
+      "CBC": "hemoglobin 11.4 g/dL mildly low",
+      "BMP": "creatinine 1.8 mg/dL elevated, suggesting renal artery involvement",
+      "TEE_echocardiogram": "dissection flap in ascending aorta, moderate aortic regurgitation, pericardial effusion",
+      "MRI_aorta": "not appropriate in acute emergency setting"
+    },
+    "gold_diagnosis": "type_A_aortic_dissection",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["CT_aortography", "chest_xray", "TEE_echocardiogram"],
+    "gold_differential": ["type_A_aortic_dissection", "STEMI", "pulmonary_embolism"],
+    "scoring_hints": {
+      "critical_symptoms": ["sudden_tearing_chest_pain", "radiation_to_back", "BP_differential_between_arms", "hypertension", "aortic_valve_history"],
+      "diagnosis_keywords": ["aortic dissection", "Type A aortic dissection", "ascending aortic dissection", "dissecting aneurysm"],
+      "triage_keywords": ["immediate", "emergency surgery", "cardiothoracic surgery", "critical"]
+    }
+  },
+  {
+    "id": "case_031",
+    "difficulty": "hard",
+    "chief_complaint": "My whole family came home from camping and everyone has a headache, feels sick, and my husband passed out briefly.",
+    "age": 45,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "138/88",
+      "heart_rate": 102,
+      "temperature": 37.0,
+      "respiratory_rate": 20,
+      "oxygen_saturation": 95
+    },
+    "symptom_responses": {
+      "describe your symptoms": "a terrible throbbing headache, nausea, dizziness, and I feel very confused and weak",
+      "are other family members sick": "yes, all four of us have the same symptoms, my husband fainted briefly and the kids are lethargic",
+      "where were you staying": "a rented cabin in the mountains with a gas heater and wood stove",
+      "was the heater working properly": "I think so but the windows were all shut because it was cold",
+      "do you have any home CO detectors": "not in the cabin, no",
+      "when did the symptoms start": "about 12 hours into our stay, everyone got headaches around the same time",
+      "did symptoms improve when you left the cabin": "yes, once we came outside and drove away everyone felt somewhat better",
+      "do you have chest pain": "mild chest tightness",
+      "any pets with you": "yes, our dog was very lethargic too",
+      "any history of migraines or similar headaches": "no migraines, this was completely different from any headache I have had"
+    },
+    "available_tests": ["carboxyhemoglobin_level", "ABG", "CBC", "BMP", "ECG", "CT_head", "troponin", "oxygen_saturation_co_oximetry"],
+    "test_results": {
+      "carboxyhemoglobin_level": "28% markedly elevated, normal less than 3%",
+      "ABG": "pH 7.38, pO2 95 mmHg on room air appearing deceptively normal on standard oximetry, CO-oximetry shows COHb 28%",
+      "CBC": "normal",
+      "BMP": "lactate 4.1 mmol/L elevated, otherwise normal electrolytes",
+      "ECG": "sinus tachycardia, no ST changes",
+      "CT_head": "no acute intracranial pathology, bilateral globus pallidus hypodensities",
+      "troponin": "mildly elevated at 0.08 ng/mL",
+      "oxygen_saturation_co_oximetry": "standard pulse oximetry falsely reads 96%, CO-oximetry shows true SaO2 of 72%"
+    },
+    "gold_diagnosis": "carbon_monoxide_poisoning",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["carboxyhemoglobin_level", "ABG"],
+    "gold_differential": ["carbon_monoxide_poisoning", "viral_gastroenteritis", "migraine"],
+    "scoring_hints": {
+      "critical_symptoms": ["household_cluster", "headache", "cabin_with_gas_heater", "improved_outdoors", "syncope", "pet_affected"],
+      "diagnosis_keywords": ["carbon monoxide poisoning", "CO poisoning", "carbon monoxide toxicity", "CO toxicity"],
+      "triage_keywords": ["immediate", "100% oxygen", "hyperbaric oxygen", "critical", "poison control"]
+    }
+  },
+  {
+    "id": "case_032",
+    "difficulty": "hard",
+    "chief_complaint": "I found this man wandering confused near a bar and brought him in — he cannot walk straight and his eyes are moving strangely.",
+    "age": 52,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "108/70",
+      "heart_rate": 98,
+      "temperature": 36.6,
+      "respiratory_rate": 18,
+      "oxygen_saturation": 97
+    },
+    "symptom_responses": {
+      "can you tell me your name": "patient is confused and cannot give his name clearly",
+      "can you describe where you are right now": "patient looks around confused and says 'I don't know this place'",
+      "have you been drinking alcohol": "smell of alcohol on his breath, companion says he drinks daily",
+      "have you eaten anything today": "companion says he probably has not eaten properly in weeks",
+      "can you walk for me": "patient has a wide-based ataxic gait and nearly falls",
+      "follow my finger with your eyes": "bilateral horizontal nystagmus and difficulty moving eyes laterally, partial ophthalmoplegia",
+      "what day is it": "patient cannot state day, month, or year",
+      "do you have any medical conditions": "companion says he has been homeless for two years and drinks heavily daily",
+      "any recent head injury or fall": "companion says he fell once last week",
+      "have you been vomiting": "yes, companion says he vomited yesterday"
+    },
+    "available_tests": ["thiamine_level", "blood_glucose", "CBC", "BMP", "LFTs", "MRI_brain", "CT_head", "blood_alcohol_level", "ammonia_level"],
+    "test_results": {
+      "thiamine_level": "critically low at 28 nmol/L, normal greater than 70 nmol/L",
+      "blood_glucose": "62 mg/dL low normal",
+      "CBC": "macrocytic anemia MCV 108 fL, WBC 7.2",
+      "BMP": "sodium 132 mEq/L, magnesium 0.6 mEq/L critically low, otherwise normal",
+      "LFTs": "ALT 88 U/L mildly elevated, AST 144 U/L elevated, GGT markedly elevated",
+      "MRI_brain": "T2 hyperintensities in the mammillary bodies, medial thalami, and periaqueductal gray - pathognomonic for Wernicke encephalopathy",
+      "CT_head": "no hemorrhage, no mass, subtle changes in periventricular regions",
+      "blood_alcohol_level": "142 mg/dL elevated",
+      "ammonia_level": "mildly elevated at 68 mcmol/L"
+    },
+    "gold_diagnosis": "Wernicke_encephalopathy",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["thiamine_level", "MRI_brain", "BMP"],
+    "gold_differential": ["Wernicke_encephalopathy", "alcohol_intoxication", "hepatic_encephalopathy"],
+    "scoring_hints": {
+      "critical_symptoms": ["confusion_ophthalmoplegia_ataxia", "alcohol_dependence", "malnutrition", "nystagmus", "classic_triad"],
+      "diagnosis_keywords": ["Wernicke encephalopathy", "Wernicke's encephalopathy", "thiamine deficiency", "Wernicke-Korsakoff syndrome"],
+      "triage_keywords": ["immediate", "thiamine IV", "glucose", "critical", "thiamine before glucose"]
+    }
+  },
+  {
+    "id": "case_033",
+    "difficulty": "hard",
+    "chief_complaint": "My right eye is in terrible pain, the vision is blurry with rainbow halos, and I feel nauseated.",
+    "age": 63,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "156/94",
+      "heart_rate": 88,
+      "temperature": 36.9,
+      "respiratory_rate": 16,
+      "oxygen_saturation": 98
+    },
+    "symptom_responses": {
+      "describe the eye pain": "severe aching pain in my right eye and forehead, started about two hours ago",
+      "describe the vision problem": "my right eye vision is very blurry and I see rainbow-colored halos around lights",
+      "does your eye look red": "yes, my husband said my eye is very red",
+      "did you take any medication recently that could dilate your pupils": "yes, I took a decongestant for a cold earlier today",
+      "have you had this before": "no, first time ever",
+      "do you have a history of glaucoma": "my optometrist said I have narrow angles and to be careful",
+      "do you feel nauseated or have you vomited": "yes, severe nausea and I vomited once",
+      "has the eye felt hard or firm": "I am not sure, it feels very uncomfortable and different",
+      "any family history of glaucoma": "yes, my mother lost vision from glaucoma",
+      "did the symptoms start in a dark room or theatre": "yes, I was watching a movie in a dark cinema"
+    },
+    "available_tests": ["intraocular_pressure_tonometry", "slit_lamp_examination", "gonioscopy", "CBC", "BMP", "CT_head", "MRI_orbit", "fluorescein_angiography"],
+    "test_results": {
+      "intraocular_pressure_tonometry": "right eye IOP 62 mmHg markedly elevated, left eye 18 mmHg normal, normal less than 21 mmHg",
+      "slit_lamp_examination": "right eye: corneal edema and cloudiness, mid-dilated fixed pupil, shallow anterior chamber, ciliary injection",
+      "gonioscopy": "closed angles bilaterally, right worse than left",
+      "CBC": "normal",
+      "BMP": "normal",
+      "CT_head": "no intracranial pathology to explain eye symptoms",
+      "MRI_orbit": "not required based on clinical findings",
+      "fluorescein_angiography": "not performed in acute setting"
+    },
+    "gold_diagnosis": "acute_angle_closure_glaucoma",
+    "gold_triage_level": "urgent",
+    "gold_key_tests": ["intraocular_pressure_tonometry", "slit_lamp_examination"],
+    "gold_differential": ["acute_angle_closure_glaucoma", "migraine_with_visual_aura", "uveitis"],
+    "scoring_hints": {
+      "critical_symptoms": ["painful_red_eye", "halos_around_lights", "fixed_mid_dilated_pupil", "nausea", "known_narrow_angles", "decongestant_use"],
+      "diagnosis_keywords": ["acute angle closure glaucoma", "angle closure glaucoma", "acute glaucoma", "closed angle glaucoma"],
+      "triage_keywords": ["urgent", "ophthalmology emergency", "IOP reduction", "pilocarpine", "acetazolamide"]
+    }
+  },
+  {
+    "id": "case_034",
+    "difficulty": "hard",
+    "chief_complaint": "I have a terrible sore throat, I am drooling because I cannot swallow, and my breathing is becoming noisy.",
+    "age": 52,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "138/88",
+      "heart_rate": 112,
+      "temperature": 39.4,
+      "respiratory_rate": 28,
+      "oxygen_saturation": 93
+    },
+    "symptom_responses": {
+      "describe your throat symptoms": "extreme sore throat and I cannot swallow my saliva, it just drips out",
+      "how long has this been going on": "started yesterday with a sore throat and now getting much worse and I am struggling to breathe",
+      "can you open your mouth normally": "barely, it hurts too much and my jaw is stiff",
+      "describe your breathing": "I hear a noise like a high-pitched whistle when I breathe in, very frightening",
+      "can you eat or drink": "absolutely not, I cannot swallow anything",
+      "do you have a hoarse or muffled voice": "yes, my voice sounds muffled and strange, my wife could not recognize me on the phone",
+      "do you sit forward to breathe better": "yes, I find it much easier sitting bolt upright leaning slightly forward",
+      "have you been vaccinated against Haemophilus influenzae": "I am not sure, I am 52 and may have missed some vaccines",
+      "any recent throat or dental procedures": "no procedures",
+      "do you have diabetes or are you immunocompromised": "yes, I have poorly controlled diabetes"
+    },
+    "available_tests": ["soft_tissue_neck_xray", "CT_neck", "laryngoscopy_flexible", "CBC", "blood_cultures", "BMP", "throat_culture", "ABG"],
+    "test_results": {
+      "soft_tissue_neck_xray": "thumb sign present - thickened epiglottis, prevertebral soft tissue swelling, do not delay treatment for imaging",
+      "CT_neck": "markedly thickened epiglottis and aryepiglottic folds with periglottic edema, airway significantly narrowed",
+      "laryngoscopy_flexible": "cherry-red swollen epiglottis with severely narrowed airway, performed with anesthesia on standby",
+      "CBC": "WBC 24.2 x10^9/L with bandemia",
+      "blood_cultures": "two sets drawn, gram-positive rods preliminary",
+      "BMP": "glucose 288 mg/dL, creatinine 1.2 mg/dL",
+      "throat_culture": "not safely obtainable",
+      "ABG": "pH 7.44, pO2 68 mmHg on face mask oxygen, mild hypoxemia"
+    },
+    "gold_diagnosis": "acute_epiglottitis",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["soft_tissue_neck_xray", "CT_neck"],
+    "gold_differential": ["acute_epiglottitis", "peritonsillar_abscess", "Ludwig_angina"],
+    "scoring_hints": {
+      "critical_symptoms": ["drooling", "stridor", "dysphagia", "tripod_position", "muffled_voice", "high_fever"],
+      "diagnosis_keywords": ["epiglottitis", "acute epiglottitis", "supraglottitis", "epiglottic abscess"],
+      "triage_keywords": ["immediate", "airway emergency", "intubation", "ENT emergency", "do not examine throat"]
+    }
+  },
+  {
+    "id": "case_035",
+    "difficulty": "hard",
+    "chief_complaint": "I am a young woman and I have a high fever, a rash all over, and I feel like I am dying.",
+    "age": 22,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "78/48",
+      "heart_rate": 140,
+      "temperature": 40.1,
+      "respiratory_rate": 28,
+      "oxygen_saturation": 94
+    },
+    "symptom_responses": {
+      "describe the rash": "red flat rash all over my trunk and limbs that looks like a sunburn",
+      "do you use tampons": "yes, I am on my period and have been using super-absorbent tampons for five days without changing",
+      "do you have any vaginal symptoms": "yes, unusual discharge and it hurts",
+      "when did you start feeling this sick": "yesterday felt fine, today I woke up feeling extremely ill, it came on very fast",
+      "do you have muscle aches": "yes, terrible muscle aches all over, worse than any flu I have had",
+      "do you have vomiting or diarrhea": "yes, vomiting and profuse watery diarrhea",
+      "are you confused at all": "I feel very confused and not with it",
+      "have you had any recent cuts, burns, or surgical procedures": "just my period and the tampons",
+      "do you have any skin breakdown or infections on your skin": "no visible skin infections",
+      "any previous toxic shock syndrome episodes": "no, never"
+    },
+    "available_tests": ["blood_cultures", "CBC", "BMP", "CRP_procalcitonin", "coagulation_studies", "LFTs", "vaginal_culture", "urinalysis", "lactate"],
+    "test_results": {
+      "blood_cultures": "Staphylococcus aureus isolated from two sets",
+      "CBC": "WBC 24.8 x10^9/L with bandemia and left shift, hemoglobin 10.8 g/dL, platelets 58 x10^9/L very low",
+      "BMP": "creatinine 2.8 mg/dL markedly elevated, sodium 129 mEq/L, BUN 44",
+      "CRP_procalcitonin": "CRP 310 mg/L, procalcitonin 28 ng/mL, both markedly elevated",
+      "coagulation_studies": "PT 18 sec, PTT 52 sec prolonged, fibrinogen 88 mg/dL low, D-dimer markedly elevated - DIC pattern",
+      "LFTs": "ALT 480 U/L, AST 620 U/L markedly elevated, bilirubin 3.8 mg/dL",
+      "vaginal_culture": "heavy growth Staphylococcus aureus TSST-1 producing strain",
+      "urinalysis": "pyuria, granular casts",
+      "lactate": "6.2 mmol/L critically elevated"
+    },
+    "gold_diagnosis": "toxic_shock_syndrome",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["blood_cultures", "CBC", "lactate", "coagulation_studies"],
+    "gold_differential": ["toxic_shock_syndrome", "septic_shock", "meningococcemia"],
+    "scoring_hints": {
+      "critical_symptoms": ["tampon_use", "diffuse_erythroderma", "high_fever", "hypotension", "multiorgan_failure", "menstruating_female"],
+      "diagnosis_keywords": ["toxic shock syndrome", "TSS", "staphylococcal toxic shock", "TSST-1"],
+      "triage_keywords": ["immediate", "remove tampon", "ICU", "vasopressors", "antibiotics"]
+    }
+  },
+  {
+    "id": "case_036",
+    "difficulty": "hard",
+    "chief_complaint": "I have a pounding headache, my heart is pounding, I am sweating profusely, and my face is flushing.",
+    "age": 38,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "228/138",
+      "heart_rate": 148,
+      "temperature": 37.4,
+      "respiratory_rate": 22,
+      "oxygen_saturation": 97
+    },
+    "symptom_responses": {
+      "describe the episode": "sudden onset severe pounding headache, heart racing, profuse sweating, and skin flushing all together",
+      "how long do these episodes last": "they come and go, usually 15 to 30 minutes, then everything settles",
+      "how long have you been having these episodes": "for about three months, getting more frequent",
+      "any triggers for these episodes": "sometimes exercise, sometimes bending over, sometimes nothing at all",
+      "do you have anxiety or panic attacks": "my doctor thought it was panic attacks but this feels different and my blood pressure is extremely high",
+      "do you have a family history of endocrine tumors": "my aunt had something with her adrenal gland",
+      "do you take any supplements or medications": "no prescription drugs, I take some herbal supplements",
+      "any weight changes": "yes, I have lost about 10 kg without trying over the past 3 months",
+      "any previous hypertension before these episodes": "no, I have always had normal blood pressure",
+      "do you have tremors": "yes, I notice my hands shake during the episodes"
+    },
+    "available_tests": ["plasma_metanephrines", "urine_catecholamines", "CBC", "BMP", "thyroid_function_tests", "cortisol", "CT_abdomen_adrenals", "MRI_adrenals", "ECG"],
+    "test_results": {
+      "plasma_metanephrines": "plasma normetanephrine 6.4 nmol/L markedly elevated (normal <0.9), plasma metanephrine 2.8 nmol/L markedly elevated (normal <0.5)",
+      "urine_catecholamines": "24-hour urine norepinephrine 2840 mcg markedly elevated, epinephrine 488 mcg elevated",
+      "CBC": "normal, mild polycythemia hematocrit 50%",
+      "BMP": "glucose 168 mg/dL elevated, creatinine 1.0 mg/dL, sodium 142 mEq/L",
+      "thyroid_function_tests": "normal TSH",
+      "cortisol": "mildly elevated at 24 mcg/dL",
+      "CT_abdomen_adrenals": "4.8 cm right adrenal mass with heterogeneous enhancement, lipid-poor on unenhanced CT",
+      "MRI_adrenals": "T2 hyperintense right adrenal mass - salt and pepper pattern, highly suspicious for pheochromocytoma",
+      "ECG": "sinus tachycardia, no ischemic changes, LVH pattern"
+    },
+    "gold_diagnosis": "pheochromocytoma_crisis",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["plasma_metanephrines", "CT_abdomen_adrenals"],
+    "gold_differential": ["pheochromocytoma_crisis", "hypertensive_emergency", "carcinoid_syndrome"],
+    "scoring_hints": {
+      "critical_symptoms": ["paroxysmal_hypertension", "headache_palpitations_sweating_triad", "tachycardia", "adrenal_mass", "episodic_nature"],
+      "diagnosis_keywords": ["pheochromocytoma", "pheo", "catecholamine excess", "adrenal tumor", "pheochromocytoma crisis"],
+      "triage_keywords": ["immediate", "alpha blockade", "phentolamine", "no beta blockers first", "ICU"]
+    }
+  },
+  {
+    "id": "case_037",
+    "difficulty": "hard",
+    "chief_complaint": "I had the absolute worst headache of my life come on in a second while I was at the gym.",
+    "age": 48,
+    "gender": "female",
+    "initial_vitals": {
+      "blood_pressure": "178/110",
+      "heart_rate": 88,
+      "temperature": 37.1,
+      "respiratory_rate": 18,
+      "oxygen_saturation": 97
+    },
+    "symptom_responses": {
+      "describe the headache onset precisely": "I was lifting weights and in an instant, like a thunderclap, I had the worst headache of my entire life",
+      "how does it compare to previous headaches": "I have had migraines but this is completely different, it reached maximum intensity in under one second",
+      "do you have neck stiffness": "yes, my neck is quite stiff and it hurts to move it",
+      "any loss of consciousness": "briefly, I felt like I blacked out for a few seconds right when it hit",
+      "any nausea or vomiting": "yes, vomiting multiple times",
+      "any vision changes": "briefly saw double when it first hit",
+      "any weakness or numbness": "no focal weakness",
+      "any light sensitivity": "yes, extremely, I cannot open my eyes",
+      "do you have a family history of brain aneurysms": "yes, my sister had a brain aneurysm",
+      "have you had a headache like this before, a warning headache": "actually, I had a smaller sudden headache two weeks ago that went away in an hour, I ignored it"
+    },
+    "available_tests": ["CT_head", "lumbar_puncture", "CT_angiography_brain", "MRI_brain", "MRA_brain", "CBC", "coagulation_studies", "BMP"],
+    "test_results": {
+      "CT_head": "hyperdense blood in basal cisterns and sylvian fissures, diffuse subarachnoid hemorrhage pattern",
+      "lumbar_puncture": "xanthochromia on spectrophotometry, RBC 120,000/uL in all tubes, elevated opening pressure 28 cmH2O",
+      "CT_angiography_brain": "7 mm saccular aneurysm at the junction of the left posterior communicating artery and internal carotid artery, consistent with the bleeding source",
+      "MRI_brain": "subarachnoid blood confirmed, no intraparenchymal extension",
+      "MRA_brain": "confirms left PCOM aneurysm",
+      "CBC": "WBC 14.2 x10^9/L stress response, hemoglobin 13.8 g/dL",
+      "coagulation_studies": "normal",
+      "BMP": "sodium 138 mEq/L, glucose 142 mg/dL stress response, creatinine 0.9 mg/dL"
+    },
+    "gold_diagnosis": "subarachnoid_hemorrhage",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["CT_head", "lumbar_puncture", "CT_angiography_brain"],
+    "gold_differential": ["subarachnoid_hemorrhage", "thunderclap_migraine", "cerebral_venous_thrombosis"],
+    "scoring_hints": {
+      "critical_symptoms": ["thunderclap_headache", "worst_headache_of_life", "neck_stiffness", "exertional_onset", "sentinel_headache", "family_history_aneurysm"],
+      "diagnosis_keywords": ["subarachnoid hemorrhage", "SAH", "ruptured aneurysm", "brain aneurysm rupture", "subarachnoid bleed"],
+      "triage_keywords": ["immediate", "neurosurgery", "neurointerventional", "nimodipine", "critical"]
+    }
+  },
+  {
+    "id": "case_038",
+    "difficulty": "hard",
+    "chief_complaint": "I was in a motorcycle accident and I am getting more short of breath every minute.",
+    "age": 27,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "88/52",
+      "heart_rate": 138,
+      "temperature": 36.7,
+      "respiratory_rate": 34,
+      "oxygen_saturation": 84
+    },
+    "symptom_responses": {
+      "what happened in the accident": "I was hit by a car and thrown from my motorcycle onto my left side",
+      "where does it hurt": "severe pain on my left chest when I breathe",
+      "do you feel pressure in your chest": "yes, crushing pressure and my breathing is getting harder by the minute",
+      "does your neck feel unusual": "yes, my neck veins look really prominent and my girlfriend mentioned that",
+      "are your lips or fingertips blue": "yes, my girlfriend says my lips are turning blue",
+      "any other injuries": "my left arm hurts and I think my ribs are broken",
+      "are you getting worse as time passes": "yes, rapidly, it was hard to breathe after the accident but now it is much worse",
+      "any difficulty speaking": "I can only manage a few words before needing to gasp",
+      "did you have any breathing problems before this accident": "no, completely healthy",
+      "is the breathing better on any particular side": "breathing is slightly easier when I lean to my right"
+    },
+    "available_tests": ["chest_xray", "FAST_ultrasound", "ABG", "CBC", "BMP", "chest_CT", "needle_decompression_bedside", "ECG"],
+    "test_results": {
+      "chest_xray": "absent left lung markings, tracheal deviation to the right, hyperlucent left hemithorax, depressed left hemidiaphragm",
+      "FAST_ultrasound": "absent lung sliding on left side, lung point sign absent - consistent with pneumothorax",
+      "ABG": "pH 7.20, pO2 44 mmHg, pCO2 58 mmHg - severe respiratory failure",
+      "CBC": "hemoglobin 11.4 g/dL acutely dropping, WBC 14.2",
+      "BMP": "normal electrolytes",
+      "chest_CT": "large left tension pneumothorax with mediastinal shift and compression of right lung, multiple left rib fractures",
+      "needle_decompression_bedside": "immediate rush of air on needle decompression of left 2nd intercostal space midclavicular line, hemodynamic improvement",
+      "ECG": "sinus tachycardia, low voltage in left leads"
+    },
+    "gold_diagnosis": "tension_pneumothorax",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["chest_xray", "FAST_ultrasound"],
+    "gold_differential": ["tension_pneumothorax", "massive_hemothorax", "cardiac_tamponade"],
+    "scoring_hints": {
+      "critical_symptoms": ["trauma", "respiratory_distress", "tracheal_deviation", "absent_breath_sounds", "hypotension", "distended_neck_veins"],
+      "diagnosis_keywords": ["tension pneumothorax", "pneumothorax", "tension pneumo", "collapsed lung"],
+      "triage_keywords": ["immediate", "needle_decompression", "chest_tube", "trauma bay", "critical"]
+    }
+  },
+  {
+    "id": "case_039",
+    "difficulty": "hard",
+    "chief_complaint": "I am an older man with sudden severe diffuse abdominal pain completely out of proportion to how my belly looks.",
+    "age": 72,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "102/64",
+      "heart_rate": 118,
+      "temperature": 37.3,
+      "respiratory_rate": 22,
+      "oxygen_saturation": 95
+    },
+    "symptom_responses": {
+      "describe the abdominal pain": "sudden onset severe diffuse abdominal pain that started about 3 hours ago, it is excruciating",
+      "does the pain match how tender your belly is": "the nurse barely touched my belly but the pain feels unbearable inside",
+      "do you have atrial fibrillation or a history of blood clots": "yes, I have had atrial fibrillation for years but stopped my warfarin because of a fall",
+      "have you had any vomiting": "yes, vomited three times, blood-tinged mucus the last time",
+      "any diarrhea": "yes, bloody loose stool an hour ago",
+      "do you have any hardening of the arteries or vascular problems": "yes, peripheral vascular disease and a stent in my leg",
+      "how severe is the pain compared to other pains you have had": "it is the worst pain of my entire life",
+      "has the pain changed in character over time": "it was unbearable initially, then seemed to ease briefly, now it is even worse - very bad sign",
+      "any prior abdominal surgeries": "appendectomy years ago",
+      "do you have any kidney problems": "mild chronic kidney disease"
+    },
+    "available_tests": ["CT_angiography_abdomen", "lactate", "CBC", "BMP", "LFTs", "lipase", "amylase", "abdominal_xray", "ECG", "blood_cultures"],
+    "test_results": {
+      "CT_angiography_abdomen": "occlusion of the superior mesenteric artery with absent enhancement of small bowel loops, pneumatosis intestinalis in distal ileum and right colon, portal venous gas",
+      "lactate": "8.2 mmol/L critically elevated indicating profound ischemia",
+      "CBC": "WBC 28.4 x10^9/L with bandemia, hemoglobin 10.4 g/dL",
+      "BMP": "creatinine 2.8 mg/dL elevated, bicarbonate 12 mEq/L severe metabolic acidosis, potassium 6.2 mEq/L elevated",
+      "LFTs": "mildly elevated transaminases",
+      "lipase": "mildly elevated at 180 U/L from bowel ischemia",
+      "amylase": "mildly elevated",
+      "abdominal_xray": "no free air, but gas in bowel wall (pneumatosis)",
+      "ECG": "atrial fibrillation, no acute ischemic changes",
+      "blood_cultures": "pending"
+    },
+    "gold_diagnosis": "acute_mesenteric_ischemia",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["CT_angiography_abdomen", "lactate"],
+    "gold_differential": ["acute_mesenteric_ischemia", "perforated_viscus", "acute_pancreatitis"],
+    "scoring_hints": {
+      "critical_symptoms": ["pain_out_of_proportion_to_examination", "atrial_fibrillation", "anticoagulation_stopped", "bloody_diarrhea", "vascular_disease"],
+      "diagnosis_keywords": ["mesenteric ischemia", "acute mesenteric ischemia", "bowel ischemia", "SMA occlusion", "intestinal ischemia"],
+      "triage_keywords": ["immediate", "vascular surgery", "surgical emergency", "anticoagulation", "bowel resection"]
+    }
+  },
+  {
+    "id": "case_040",
+    "difficulty": "hard",
+    "chief_complaint": "I have had indigestion and back pain since this morning and I feel a bit short of breath.",
+    "age": 64,
+    "gender": "male",
+    "initial_vitals": {
+      "blood_pressure": "118/76",
+      "heart_rate": 68,
+      "temperature": 37.0,
+      "respiratory_rate": 16,
+      "oxygen_saturation": 96
+    },
+    "symptom_responses": {
+      "describe the indigestion": "burning discomfort between my shoulder blades and in my upper stomach since this morning",
+      "any chest pain": "no typical chest pain, just this annoying indigestion feeling",
+      "does your back hurt": "yes, my upper and mid back aches, which is unusual for me",
+      "do you have nausea": "mild nausea, I thought it was something I ate",
+      "do you have any cardiac history": "I had a bypass surgery 8 years ago for coronary artery disease",
+      "do you have diabetes": "yes, type 2 diabetes for 15 years",
+      "have you taken antacids": "yes, I took three antacid tablets and it has not helped at all",
+      "any arm or jaw symptoms": "no, none of that typical heart stuff",
+      "any recent similar episodes that went away": "yes, I had similar brief back pain episodes last week but they went away quickly",
+      "have you taken your cardiac medications today": "yes, aspirin, atorvastatin, and metoprolol"
+    },
+    "available_tests": ["ECG", "troponin", "posterior_ECG_leads", "chest_xray", "echocardiogram", "BMP", "CBC", "lipase"],
+    "test_results": {
+      "ECG": "standard 12-lead shows ST depression in V1-V3 and tall R waves in V1-V2, subtle changes easily missed",
+      "troponin": "initial troponin 0.22 ng/mL elevated, repeat at 3 hours 0.88 ng/mL rising significantly",
+      "posterior_ECG_leads": "ST elevation in V7, V8, V9 posterior leads confirming posterior STEMI",
+      "chest_xray": "no pulmonary edema, no pneumothorax, normal cardiac silhouette",
+      "echocardiogram": "posterior and inferior wall hypokinesis, estimated EF 42%",
+      "BMP": "glucose 168 mg/dL, creatinine 1.2 mg/dL, electrolytes normal",
+      "CBC": "normal",
+      "lipase": "normal at 32 U/L"
+    },
+    "gold_diagnosis": "posterior_STEMI",
+    "gold_triage_level": "immediate",
+    "gold_key_tests": ["posterior_ECG_leads", "troponin", "ECG"],
+    "gold_differential": ["posterior_STEMI", "GERD", "NSTEMI"],
+    "scoring_hints": {
+      "critical_symptoms": ["atypical_chest_pain", "back_pain", "diabetic_patient", "known_CAD", "antacid_unresponsive", "silent_ischemia"],
+      "diagnosis_keywords": ["posterior STEMI", "posterior myocardial infarction", "posterior MI", "STEMI", "heart attack", "acute coronary syndrome"],
+      "triage_keywords": ["immediate", "cath lab activation", "PCI", "cardiac catheterization", "emergency"]
+    }
+  }
+]
+

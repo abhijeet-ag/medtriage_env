@@ -17,8 +17,8 @@ dependencies = [
     "httpx>=0.28.1",
 ]
 
-[tool.setuptools]
-py-modules = ["models", "client", "__init__"]
+[tool.setuptools.packages.find]
+where = ["."]
 
 [project.optional-dependencies]
 dev = ["pytest", "pytest-asyncio"]
