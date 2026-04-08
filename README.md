@@ -69,7 +69,7 @@ Install OpenEnv core and this environment (replace placeholders with your Huggin
 
 ```bash
 pip install openenv-core
-pip install git+https://huggingface.co/spaces/YOURNAME/medtriage_env
+pip install git+https://huggingface.co/spaces/abhi-ag/medtriage_env
 ```
 
 Minimal Python loop (`reset` returns an observation; `step` returns `StepResult`):
@@ -135,9 +135,9 @@ python inference.py
 
 ## Hugging Face Space
 
-**Live demo / hosted build:** [https://YOURNAME-medtriage-env.hf.space](https://YOURNAME-medtriage-env.hf.space)
+**Live demo / hosted build:** [https://abhi-ag-medtriage-env.hf.space](https://abhi-ag-medtriage-env.hf.space)
 
-Replace `YOURNAME` with your Hugging Face username or org slug.
+
 
 ---
 
