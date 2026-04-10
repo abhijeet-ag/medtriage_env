@@ -26,4 +26,4 @@ server:
   port: 8000
   
 hub:
-  space_url: "https://abhi-ag-medtriage-env.hf.space"    # Fill this in after HF Spaces deployment
+  space_url: "https://abhi-ag-medtriage-env-51a1b42.hf.space"    # Fill this in after HF Spaces deployment
