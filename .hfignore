@@ -1,0 +1,10 @@
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.DS_Store
+medtriage_env.egg-info/
+openenv_medtriage_env_temp.egg-info/
