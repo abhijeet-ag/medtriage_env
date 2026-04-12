@@ -16,7 +16,11 @@ from server.graders import MedTriageGrader, _symptom_covered
 
 
 def _norm(s: Any) -> str:
-    return str(s).lower().strip()
+    return str(s).lower().strip().replace("_", " ").replace("-", " ")
+
+def _norm_compact(s: Any) -> str:
+    """Norm with all spaces removed for fuzzy matching."""
+    return _norm(s).replace(" ", "")
 
 
 def _with_cumulative_reward(obs: MedTriageObservation, cumulative: float) -> MedTriageObservation:
@@ -53,8 +57,25 @@ def _best_symptom_response_key(question: str, symptom_responses: dict) -> Option
 def _ci_in_list(name: str, items: List[str]) -> Optional[str]:
     """Return the canonical list entry if *name* matches any item case-insensitively."""
     nl = _norm(name)
+    # Exact match first
     for item in items:
         if _norm(item) == nl:
+            return item
+    # Substring fallback: item contained in name or name contained in item
+    for item in items:
+        ik = _norm(item)
+        if ik in nl or nl in ik:
+            return item
+    # Compact fallback: remove all spaces for xray vs x-ray style mismatches
+    nl_compact = _norm_compact(name)
+    for item in items:
+        if _norm_compact(item) == nl_compact:
+            return item
+    # Partial word overlap fallback for "CT scan of the head" vs "CT_head"
+    nl_words = set(nl.split())
+    for item in items:
+        ik_words = set(_norm(item).split())
+        if ik_words and ik_words.issubset(nl_words):
             return item
     return None
 
