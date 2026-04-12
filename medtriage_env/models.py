@@ -46,7 +46,7 @@ class MedTriageAction(Action):
             "Required when action_type is 'submit_diagnosis'; ignored otherwise."
         ),
     )
-    triage_level: Optional[Literal["immediate", "urgent", "semi-urgent", "non-urgent"]] = Field(
+    triage_level: Optional[str] = Field(
         None,
         description=(
             "The Manchester Triage System priority level assigned alongside the diagnosis. "
